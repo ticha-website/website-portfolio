@@ -21,12 +21,16 @@ Use `modal` for creating the popup with detailed information about the work.
         <h3>Name of Client</h3>
         <p>Description of Client - Here should be one or two sentences about the client, for example what industry s/he from, etc.</p>
         <p> <a href="https://www.staging.ticha.fun/"> www.staging.ticha.fun</a> </p>
-        <img class="img-fluid d-block d-sm-block d-md-none" src="../images/showcase-500x333.jpg" alt="Showcase">
-        <img class="img-fluid d-none d-md-block d-lg-none" src="../images/showcase-800x533.jpg" alt="Showcase">
-        <img class="img-fluid d-none d-lg-block" src="../images/showcase-1140x760.jpg" alt="Showcase">
-          <img class="img-fluid d-block d-sm-block d-md-none" src="../images/showcase2-500x332.jpg" alt="Showcase 2">
-        <img class="img-fluid d-none d-md-block d-lg-none" src="../images/showcase2-800x531.jpg" alt="Showcase 2">
-        <img class="img-fluid d-none d-lg-block" src="../images/showcase2-1140x757.jpg" alt="Showcase 2">
+        <p class="mb-5 text-center">
+          <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandpa-264x395.jpg" alt="Screening Portrait Grandpa">
+          <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandpa-344x512.jpg" alt="Screening Portrait Grandpa">
+          <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandpa-530x789.jpg" alt="Screening Portrait Grandpa">
+        </p>
+        <p class="text-center">
+          <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandma-265x404.jpg" alt="Screening Portrait Grandma">
+          <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandma-344x524.jpg" alt="Screening Portrait Grandma">
+          <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandma-530x808.jpg" alt="Screening Portrait Grandma">
+        </p>
       </div>
     </div>
   </div>
