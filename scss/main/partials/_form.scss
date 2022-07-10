@@ -26,14 +26,23 @@ Use `form` for creating any kind of form on the website.
  */
 
 .contact-form {
-  font-size: 1.3rem;
-  width: 540px;
+  font-size: 1.1rem;
+  width: 15rem;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.3rem;
+    width: 33.75rem;
+  }
 
   @include media-breakpoint-up(md) {
-    width: 420px;
+    width: 26.25rem;
   }
 
   &--btn {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+
+    @include media-breakpoint-up(sm) {
+      font-size: 1.3rem;
+    }
   }
 }
