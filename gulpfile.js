@@ -54,7 +54,7 @@ const nunjucks = () => {
 		'html/**/*.njk',
 		'!html/components/*.njk',
 	])
-	
+
 		.pipe(gulpNunjucks.compile({
 			clientHeadPictureSizes: {
 				sm: {
@@ -95,6 +95,7 @@ const htmlmin = () => {
 			version: '@dev',
 			pageUrl: 'http://localhost:8000',
 			googleAnalytics: 'G-xxxxxxxxx',
+			sentMessageUrl: 'http://test.localhost:8000',
 		}));
 	}
 
