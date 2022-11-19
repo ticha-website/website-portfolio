@@ -2,7 +2,7 @@
 
 const browserSync = require('browser-sync').create();
 const gulp = require('gulp');
-const gulpSass = require('gulp-sass');
+const gulpSass = require('gulp-sass')(require('sass'));
 const sassVars = require('gulp-sass-vars');
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
