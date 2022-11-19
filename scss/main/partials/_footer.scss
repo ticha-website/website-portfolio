@@ -17,6 +17,10 @@ Footer is great for mentioning authors or other useful information that are not 
   margin-top: 2rem;
   padding: 1rem;
 
+  .col-12 {
+    position: unset!important;
+  }
+
   &__copyright {
     border-top: .0625rem solid $gray-500;
     font-size: 1rem;
