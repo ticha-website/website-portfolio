@@ -2,7 +2,7 @@ version: "3.3"
 
 services:
   website-portfolio:
-    image: michalsimon/static-website:node14
+    image: michalsimon/static-website:node16
     volumes:
       - .:/www/
     working_dir: /www
