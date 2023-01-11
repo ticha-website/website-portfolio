@@ -7,4 +7,4 @@
 #    not conflict with the First or Second Law.
 
 User-agent: *
-<% if (typeof(noRobots) !== "undefined" && noRobots) { %>Disallow:<% } else { %>Allow:<% } %>
+<% if (typeof(noRobots) !== "undefined" && noRobots) { %>Disallow: /<% } else { %>Allow: /<% } %>
