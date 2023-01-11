@@ -33,10 +33,14 @@ Use `contact-form` for creating any kind of form on the website.
 
   @include media-breakpoint-up(sm) {
     font-size: 1.3rem;
-    width: 33.75rem;
+    width: 30.75rem;
   }
 
   @include media-breakpoint-up(md) {
+    width: 18.75rem;
+  }
+
+  @include media-breakpoint-up(lg) {
     width: 26.25rem;
   }
 
