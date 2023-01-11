@@ -148,6 +148,7 @@ The other variant with color backgroung which is used on the page.
 
     &::after {
       background-image: linear-gradient(to left bottom, theme-color('primary') 0%, theme-color('primary') 50%, $almost-transparent 51%);
+      z-index: -1;
     }
 
     &.content--beveled-reverse {
