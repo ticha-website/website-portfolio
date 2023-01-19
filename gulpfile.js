@@ -95,7 +95,7 @@ const htmlmin = () => {
 			version: '@dev',
 			pageUrl: 'http://localhost:8000',
 			googleAnalytics: 'G-xxxxxxxxx',
-			sentMessageUrl: 'http://test.localhost:8000',
+			sentMessageUrl: 'http://localhost:4000/v1/contact-form',
 		}));
 	}
 
