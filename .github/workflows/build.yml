@@ -36,4 +36,4 @@ jobs:
           -H "Accept: application/vnd.github.v3+json" \
           -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
           --data '{"ref": "refs/heads/master"}' \
-          https://api.github.com/repos/jiritichy/website-infrastructure/actions/workflows/website.yml/dispatches
+          https://api.github.com/repos/ticha-website/website-infrastructure/actions/workflows/website.yml/dispatches
