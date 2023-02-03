@@ -1,9 +1,9 @@
 Website Portfolio
 --------
 
-[![Codeac.io](https://static.codeac.io/badges/2-301952939.svg "Codeac.io")](https://app.codeac.io/github/jiritichy/website-portfolio)
+[![Codeac](https://static.codeac.io/badges/2-301952939.svg "Codeac")](https://app.codeac.io/github/ticha-website/website-portfolio)
 
-Portfolio for designers work.
+Portfolio for designers work
 
 ## Technologies
 
