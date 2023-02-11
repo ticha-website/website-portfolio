@@ -7,5 +7,6 @@ services:
       - 3003:3003
       - 3013:2013
       - 9229:9229
+      - 6006:6006 # Storybook
     working_dir: /www
-    command: /bin/bash -c "bundle install && npm install && npx gulp --color"
+    command: /bin/bash -c "npm install && npx gulp --color"

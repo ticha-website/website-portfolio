@@ -19,7 +19,7 @@ module.exports = {
 		minimize: false,
 	},
 	resolve: {
-		extensions: ['.js'],
+		extensions: ['.js', '.mdx'],
 	},
 	devtool: 'source-map',
 	plugins: [],
