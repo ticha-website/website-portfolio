@@ -9,6 +9,7 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 const rename = require('gulp-rename');
 const named = require('vinyl-named');
+const run = require('gulp-run')
 const gulpHtmlmin = require('gulp-htmlmin');
 const gulpNunjucks = require('gulp-nunjucks');
 const yargs = require('yargs');
@@ -126,13 +127,9 @@ const transpile = () => {
 const js = transpile;
 
 // Documentation
-// const hologram = () => {
-// 	return gulp.src('docs/hologram/config.yml')
-// 		.pipe(gulpHologram({
-// 			bundler: true,
-// 			logging: true,
-// 		}));
-// };
+const storybook = () => {
+	return run('npm run storybook').exec();
+};
 
 const server = () => {
 	return browserSync.init({
@@ -171,7 +168,7 @@ const buildZip = () => {
 
 const production = gulp.series(gulp.parallel(css, js, html));
 
-const defaultTask = gulp.series(setDevelopmentEnvironment, production, gulp.parallel(watch, server));
+const defaultTask = gulp.series(setDevelopmentEnvironment, production, gulp.parallel(watch, server, storybook));
 
 
 module.exports.package = buildZip;
