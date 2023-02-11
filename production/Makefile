@@ -33,7 +33,7 @@ app: npm
 		echo "BUILD_DATE=$(shell date --utc +%FT%TZ)" >>$(build)/version.txt
 
 	@(printf "${BG}Running Gulp tasks${NC}")
-		cd $(root_project) && npm run start -- build --appVersion=$(version) --color
+		cd $(root_project) && export FORCE_COLOR=1 && node_modules/.bin/gulp production --appVersion=$(version)
 
 	@(printf "${BG}Generate Storybook${NC}")
 		cd $(root_project) && npm run storybook-build
