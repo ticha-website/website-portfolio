@@ -20,7 +20,7 @@ clean:
 .PHONY: npm
 npm:
 	@(printf "${BG}Installing NPM dependencies${NC}")
-		cd $(root_project) && npm install
+		cd $(root_project) && npm install --ci --no-audit
 
 .PHONY: app
 app: npm
