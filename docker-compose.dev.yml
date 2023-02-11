@@ -8,4 +8,4 @@ services:
       - 3013:2013
       - 9229:9229
     working_dir: /www
-    command: /bin/bash -c "bundle install && npm install && npm start"
+    command: /bin/bash -c "bundle install && npm install && npx gulp --color"
