@@ -17,28 +17,26 @@ clean:
 		rm -rf $(build)
 		rm -rf $(release)
 
-.PHONY: bundler
-bundler:
-	@(printf "${BG}Installing Ruby dependencies${NC}")
-		cd $(root_project) && bundle install
-
 .PHONY: npm
 npm:
 	@(printf "${BG}Installing NPM dependencies${NC}")
-		cd $(root_project) && npm install
+		cd $(root_project) && npm install --ci --no-audit
 
 .PHONY: app
-app: npm bundler
+app: npm
 	@(printf "${BG}Preparing build directory${NC}")
 		mkdir -p $(build)
 		mkdir -p $(release)
 
-	@(printf "${BG}Generating version file${NC}")
-		echo "VERSION=$(version)" >$(build)/version.txt
-		echo "BUILD_DATE=$(shell date --utc +%FT%TZ)" >>$(build)/version.txt
-
 	@(printf "${BG}Running Gulp tasks${NC}")
-		cd $(root_project) && export FORCE_COLOR=1 && node_modules/.bin/gulp production --appVersion=$(version)
+		cd $(root_project) && npm run start -- build --appVersion=$(version) --color
+
+	@(printf "${BG}Generate Storybook${NC}")
+		cd $(root_project) && npm run storybook-build
+
+    @(printf "${BG}Generating version file${NC}")
+        echo "VERSION=$(version)" >$(build)/version.txt
+        echo "BUILD_DATE=$(shell date --utc +%FT%TZ)" >>$(build)/version.txt
 
 	@(printf "${BG}Copying app to build directory${NC}")
 		cp -r $(root_project)/www/* $(build)/
