@@ -29,4 +29,4 @@ docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
 ## Design Style Guide
 
 For proper component development read and actively use the Style Guide.
-You can find it under [http://localhost:9011](http://localhost:9011) URL locally and even on staging and prod.
+You can find it under [http://localhost:9011](http://localhost:9011) URL locally. On staging and prod, you can find it under URL/docs/.
