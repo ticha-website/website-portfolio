@@ -15,9 +15,9 @@ navigation is great for mentioning authors or other useful information that are 
  */
 
 .header {
-  background-color: theme-color('basic');
+  background-color: $basic;
   border-bottom: .0625rem solid $gray-500;
-  color: theme-color('primary');
+  color: $primary;
   display: flex;
   left: 0;
   right: 0;

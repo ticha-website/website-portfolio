@@ -7,14 +7,17 @@ Portfolio for designers work
 
 ## Technologies
 
+<<<<<<< HEAD
 The project is based on Bootstrap 4.5.2. and leverage the SASS. 
+=======
+The project is based on Bootstrap 5.2.3 and leverage the SASS.
+>>>>>>> da99e28 (/ upgrade of bootstrap)
 We used nunjucks for templating the html sites.
 
 The site is running on AWS. The whole deployment is automated by CI/CD pipeline in GitHub Actions.
 
 ## Requirements
  - NodeJS 16.x
- - Ruby 2.5+
 
 
 ## Installation & Run
