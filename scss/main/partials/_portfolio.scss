@@ -118,9 +118,9 @@ Portfolio class allows you to do the hover effect for displays that are larger t
 
   .info {
     background-color: $color-portfolio;
-    border: .0625rem solid $primary;
+    border: .0625rem solid $color-white;
     border-radius: .3rem;
-    color: $primary;
+    color: $color-white;
     display: inline-block;
     filter: alpha(opacity = 0);
     margin: 4.125rem 0 0 1.625rem;
@@ -145,7 +145,7 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     }
 
     &:hover {
-      box-shadow: 0 0 .3125rem $primary;
+      box-shadow: 0 0 .3125rem $color-white;
     }
   }
 }
