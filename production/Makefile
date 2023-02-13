@@ -6,6 +6,8 @@ release = "$(root_project)/production/release"
 BG =\n\033[0;36m-- # Beginning
 NC =\033[0m\n# No Color
 
+$(shell git config --global --add safe.directory '*')
+
 version := $(shell git describe --tags --match="v*")
 
 .PHONY: all
