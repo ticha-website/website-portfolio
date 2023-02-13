@@ -118,9 +118,9 @@ Portfolio class allows you to do the hover effect for displays that are larger t
 
   .info {
     background-color: $color-portfolio;
-    border: .0625rem solid theme-color('primary');
+    border: .0625rem solid $primary;
     border-radius: .3rem;
-    color: theme-color('primary');
+    color: $primary;
     display: inline-block;
     filter: alpha(opacity = 0);
     margin: 4.125rem 0 0 1.625rem;
@@ -140,12 +140,12 @@ Portfolio class allows you to do the hover effect for displays that are larger t
       margin-top: 8.125rem;
     }
 
-    @include media-breakpoint-only(xl) {
+    @include media-breakpoint-up(xl) {
       margin-top: 38%;
     }
 
     &:hover {
-      box-shadow: 0 0 .3125rem theme-color('primary');
+      box-shadow: 0 0 .3125rem $primary;
     }
   }
 }

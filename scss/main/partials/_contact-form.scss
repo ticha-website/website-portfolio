@@ -28,11 +28,12 @@ Use `contact-form` for creating any kind of form on the website.
  */
 
 .contact-form {
+  display: inline;
   font-size: 1.1rem;
-  width: 15rem;
+  height: 2.4rem;
 
   @include media-breakpoint-up(sm) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     width: 30.75rem;
   }
 
@@ -44,11 +45,19 @@ Use `contact-form` for creating any kind of form on the website.
     width: 26.25rem;
   }
 
+  @include media-breakpoint-up(xl) {
+    width: 32rem;
+  }
+
   &--btn {
     font-size: 1.1rem;
 
     @include media-breakpoint-up(sm) {
       font-size: 1.3rem;
     }
+  }
+
+  &--message {
+    height: 5.2rem;
   }
 }

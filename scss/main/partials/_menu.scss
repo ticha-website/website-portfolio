@@ -51,11 +51,12 @@ Main menu in page header. It is still vertical on mobile.
       color: $color-black;
       display: block;
       padding: .5rem 1rem;
+      text-decoration: none;
 
       &:hover,
       &:focus {
         background: $gray-100;
-        color: theme-color('primary');
+        color: $primary;
         text-decoration: none;
       }
     }
@@ -80,11 +81,12 @@ Main menu in page header. It is still vertical on mobile.
         color: $color-black;
         display: inline;
         padding-right: .5rem;
+        text-decoration: none;
 
         &:hover,
         &:focus {
           background: none;
-          color: theme-color('primary');
+          color: $primary;
           text-decoration: none;
         }
       }
@@ -112,10 +114,6 @@ Main menu in page header. It is still vertical on mobile.
     padding: $navbar-toggler-padding-y $navbar-toggler-padding-x;
 
     @include border-radius($navbar-toggler-border-radius);
-
-    @include hover-focus {
-      text-decoration: none;
-    }
 
     &:hover,
     &--active {
