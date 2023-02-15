@@ -3,17 +3,10 @@ version: "3.3"
 services:
   website-portfolio:
     ports:
-<<<<<<< HEAD
-      - 8000:8000
-      - 3003:3003
-      - 3013:2013
-      - 9229:9229
-=======
       - 8000:8000 # Website
       - 3001:3001 # Browser sync - UI
       - 3013:2013 # Browser sync - Refresh
       - 9229:9229 # Node Debuger
       - 6006:6006 # Storybook
->>>>>>> 43af26f (/ documentation of the ports)
     working_dir: /www
     command: /bin/bash -c "bundle install && npm install && npx gulp --color"
