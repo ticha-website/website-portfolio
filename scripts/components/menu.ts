@@ -24,7 +24,7 @@ export function menuToggle() {
 	togglerElement.addEventListener("click", clickHandler);
 
 	//@ts-ignore
-	for (let menuItemElement of menuItems) {
+	for (const menuItemElement of menuItems) {
 		menuItemElement.addEventListener("click", menuCloseHandler);
 	}
 }

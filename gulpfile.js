@@ -95,7 +95,7 @@ const htmlmin = () => {
 
 	if (development) {
 		stream = stream.pipe(template({
-			...YAML.parse(config)
+			...YAML.parse(config),
 		}));
 	}
 

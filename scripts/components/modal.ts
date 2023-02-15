@@ -89,7 +89,7 @@ export function modal(buttonElementName: string): void {
 	const buttonElements = document.getElementsByClassName(buttonElementName);
 
 	//@ts-ignore
-	for (let buttonElement of buttonElements) {
+	for (const buttonElement of buttonElements) {
 		buttonElement.addEventListener("click", clickOpenModalHandler);
 	}
 }
