@@ -47,7 +47,7 @@
   },
   "scripts": {
     "start": "gulp",
-    "storybook": "start-storybook -p 9011",
+    "storybook": "start-storybook -p 6006",
     "storybook-build": "build-storybook --output-dir www/docs"
   }
 }

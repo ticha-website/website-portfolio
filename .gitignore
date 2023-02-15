@@ -8,3 +8,4 @@ log/
 vendor/
 www/js/
 www/clients/*.html
+.idea/
