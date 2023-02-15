@@ -38,7 +38,7 @@ app: npm bundler
 		echo "BUILD_DATE=$(shell date --utc +%FT%TZ)" >>$(build)/version.txt
 
 	@(printf "${BG}Running Gulp tasks${NC}")
-		cd $(root_project) && export FORCE_COLOR=1 && node_modules/.bin/gulp production --appVersion=$(version)
+		cd $(root_project) && npx gulp production --appVersion=$(version) --color
 
 	@(printf "${BG}Copying app to build directory${NC}")
 		cp -r $(root_project)/www/* $(build)/
@@ -46,7 +46,7 @@ app: npm bundler
 .PHONY: package
 package: app
 	@(printf "${BG}Create package${NC}")
-		cd $(root_project) && node_modules/.bin/gulp package --appVersion=$(version)
+		cd $(root_project) && npx gulp package --appVersion=$(version)
 
 	@(printf "${BG}Package version $(version) is ready${NC}")
 		echo $(version) >$(release)/latest.version
