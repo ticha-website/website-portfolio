@@ -96,6 +96,7 @@ const htmlmin = () => {
 			pageUrl: 'http://localhost:8000',
 			googleAnalytics: 'G-xxxxxxxxx',
 			sentMessageUrl: 'http://localhost:4000/v1/contact-form',
+			captchaSiteKey: false,
 		}));
 	}
 

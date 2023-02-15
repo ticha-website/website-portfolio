@@ -39,7 +39,9 @@
     </div>
 </footer>
 
+<% if (captchaSiteKey) { %>
 <script src="https://www.google.com/recaptcha/api.js"></script>
+<% } %>
 <script src="../js/app-main.js"></script>
 <% if (version === "@dev") { %>
 <script id="__bs_script__">//<![CDATA[
