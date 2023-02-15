@@ -67,7 +67,7 @@
 				<p>
 					If you'd like me to get back to you, please send me a message. If you'll describe your needs in the message, we can talk specifically.
 				</p>
-				<form action='<%= sentMessageUrl %>' method="post" id="form" enctype="multipart/form-data">
+				<form action='<%= sentMessageUrl %>' method="post" id="contact-form" enctype="multipart/form-data">
 					<div class="form-row mb-3">
 						<input type="text" class="form-control contact-form" name="name" placeholder="Name" required>
 					</div>
@@ -81,10 +81,14 @@
 						<textarea class="form-control contact-form contact-form--message" name="message" placeholder="Your Message" rows="2" required></textarea>
 					</div>
 					<div class="form-row">
-						<button type="submit" class="btn btn-secondary contact-form--btn g-recaptcha"
-								data-sitekey="6LfefhwjAAAAAPV9zHlD4kYeYahjqk8WDlKJU6q7"
-								data-callback='onSubmit'
-								data-action='submit'>Submit</button>
+						<button
+							type="submit"
+							id="contact-form-submit"
+							class="btn btn-secondary contact-form--btn g-recaptcha"
+							data-sitekey="6LfefhwjAAAAAPV9zHlD4kYeYahjqk8WDlKJU6q7"
+							data-callback='onSubmit'
+							data-action='submit'
+						>Submit</button>
 					</div>
 				</form>
 			</div>
