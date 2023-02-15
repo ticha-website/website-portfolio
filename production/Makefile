@@ -46,7 +46,8 @@ app: npm bundler
 .PHONY: package
 package: app
 	@(printf "${BG}Create package${NC}")
-		cd $(root_project) && npx gulp package --appVersion=$(version)
+		chmod 777 .
+		cd $(root_project) && npx gulp package --appVersion=$(version) --color
 
 	@(printf "${BG}Package version $(version) is ready${NC}")
 		echo $(version) >$(release)/latest.version
