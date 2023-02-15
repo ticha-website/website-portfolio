@@ -67,7 +67,7 @@
 				<p>
 					If you'd like me to get back to you, please send me a message. If you'll describe your needs in the message, we can talk specifically.
 				</p>
-				<form action='<%= sentMessageUrl %>' method="post" id="contact-form" enctype="multipart/form-data">
+				<form action='<%= apiUrl %>/v1/contact-form' method="post" id="contact-form" enctype="multipart/form-data">
 					<div class="form-row mb-3">
 						<input type="text" class="form-control contact-form" name="name" placeholder="Name" required>
 					</div>
