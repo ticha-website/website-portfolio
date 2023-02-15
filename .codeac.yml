@@ -6,6 +6,6 @@ thresholds:
 
 tools:
     eslint:
-        ext: '.js,.ts,'
+        ext: '.js,.ts'
     tslint:
         enabled: false
