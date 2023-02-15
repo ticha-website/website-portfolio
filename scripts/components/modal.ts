@@ -1,28 +1,34 @@
-//@flow
-
 const closeButtonId = 'modal-close-button';
 const modalId = 'modal';
 
-function transformResponseToText(response) {
+function transformResponseToText(response: Response): Promise<string> {
 	return response.text();
 }
 
-function clickCloseModalHandler(event: Event) {
+function clickCloseModalHandler(event: Event): void {
 	event.preventDefault();
 
 	document.body.classList.remove('modal-open');
 	const modalElement = document.getElementById(modalId);
 
+	if (!modalElement) {
+		return;
+	}
+
 	modalElement.remove();
 }
 
-function registerCloseModalListener() {
+function registerCloseModalListener(): void {
 	const closeButtonElement = document.getElementById(closeButtonId);
+
+	if(!closeButtonElement) {
+		return;
+	}
 
 	closeButtonElement.addEventListener("click", clickCloseModalHandler);
 }
 
-function openModal(title: string, body: string) {
+function openModal(title: string, body: string): void {
 	const closeButtonHtml = `
 		<button id="${closeButtonId}" type="button" class="close" data-dismiss="modal" aria-label="Close">
 	    <span aria-hidden="true">&times;</span>
@@ -53,19 +59,27 @@ function openModal(title: string, body: string) {
 	registerCloseModalListener();
 }
 
-function parseContentForModal(content) {
+function parseContentForModal(content: string): void {
 	const parser = new DOMParser();
 
 	const html = parser.parseFromString(content, "text/html");
 	const pageTitle = html.getElementById('page-title');
 	const pageBody = html.getElementById('page-body');
 
-	openModal(pageTitle.textContent, pageBody.innerHTML);
+	if (!pageTitle || !pageBody) {
+		return;
+	}
+
+	// ToDo: Come up with better solution from type perspective
+	const textContent = pageTitle.textContent || '';
+
+	openModal(textContent, pageBody.innerHTML);
 }
 
-function clickOpenModalHandler(event: Event) {
+function clickOpenModalHandler(event: Event): void {
 	event.preventDefault();
 
+	//@ts-ignore
 	const url = event.target.href;
 
 	fetch(url).then(transformResponseToText).then(parseContentForModal);
@@ -74,6 +88,7 @@ function clickOpenModalHandler(event: Event) {
 export function modal(buttonElementName: string): void {
 	const buttonElements = document.getElementsByClassName(buttonElementName);
 
+	//@ts-ignore
 	for (let buttonElement of buttonElements) {
 		buttonElement.addEventListener("click", clickOpenModalHandler);
 	}

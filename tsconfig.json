@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "display": "Browser",
+    "compilerOptions": {
+        "strict": true,
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "sourceMap": true,
+        "target": "es2020",
+        "outDir": ".build",
+        "module": "commonjs",
+        "moduleResolution": "nodenext",
+        "lib": ["es2020", "dom"],
+        "rootDir": "./"
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "include": [
+        "scripts/**/*.js",
+        "scripts/**/*.ts",
+    ]
+}

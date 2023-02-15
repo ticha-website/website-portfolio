@@ -1,10 +1,8 @@
-//@flow
-
 function extractAndSendForm(formElement: HTMLFormElement): Promise<Response> {
 	const url = formElement.action;
 
 	const formData = new FormData(formElement);
-	formData.append('isAjax', true);
+	formData.append('isAjax', 'true');
 
 	return fetch(url, {
 		method: "post",
@@ -58,5 +56,5 @@ export function contactForm(formElementId: string, submitElementId: string): voi
 		return;
 	}
 
-	submitElement.addEventListener("click", (event: Event) => clickSubmitHandler(event, formElement));
+	submitElement.addEventListener("click", (event: Event) => clickSubmitHandler(event, formElement as HTMLFormElement));
 }

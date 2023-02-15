@@ -3,3 +3,9 @@ version: '1'
 thresholds:
     error: 15
     total: 30
+
+tools:
+    eslint:
+        ext: '.js,.ts,'
+    tslint:
+        enabled: false
