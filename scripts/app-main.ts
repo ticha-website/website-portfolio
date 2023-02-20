@@ -5,4 +5,3 @@ import {contactForm} from './components/contact-form';
 menuToggle();
 modal('js-open-modal');
 contactForm('contact-form', 'contact-form-submit');
-

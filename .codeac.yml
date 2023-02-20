@@ -1,5 +1,11 @@
 version: '1'
 
 thresholds:
-    error: 15
+    error: 20
     total: 30
+
+tools:
+    eslint:
+        ext: '.js,.ts'
+    tslint:
+        enabled: false

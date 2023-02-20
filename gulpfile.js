@@ -1,5 +1,7 @@
 /* eslint-disable no-console */
 
+const YAML = require('yaml');
+const fs = require('fs');
 const browserSync = require('browser-sync').create();
 const gulp = require('gulp');
 const gulpSass = require('gulp-sass')(require('sass'));
@@ -23,6 +25,8 @@ let development = false;
 const appVersion = (typeof (yargs.argv.appVersion) !== 'undefined') ? yargs.argv.appVersion : 'dev';
 
 let webpackConfig = require('./webpack.config.js');
+
+const config = fs.readFileSync('./config.yml', 'utf8');
 
 const sass = () => {
 	return gulp.src('scss/style-*.scss')
@@ -91,12 +95,7 @@ const htmlmin = () => {
 
 	if (development) {
 		stream = stream.pipe(template({
-			noRobots: true,
-			version: '@dev',
-			pageUrl: 'http://localhost:8000',
-			googleAnalytics: 'G-xxxxxxxxx',
-			apiUrl: 'http://localhost:4000',
-			captchaSiteKey: false,
+			...YAML.parse(config),
 		}));
 	}
 
@@ -115,7 +114,7 @@ const transpile = () => {
 		myConfig.optimization.minimize = true;
 	}
 
-	return gulp.src(['scripts/app-*.js'])
+	return gulp.src(['scripts/app-*.ts'])
 		.pipe(named())
 		.pipe(webpack(myConfig, webpackCompiler))
 		.on('error', (err) => {
@@ -154,7 +153,7 @@ const watch = (callback) => {
 	};
 	gulp.watch(['scss/**/*.scss'], watchConfig, gulp.parallel(css, hologram));
 	gulp.watch(['html/**/*.njk'], watchConfig, html);
-	gulp.watch(['scripts/**/*.js'], watchConfig, js);
+	gulp.watch(['scripts/**/*.ts'], watchConfig, js);
 
 	callback();
 };
