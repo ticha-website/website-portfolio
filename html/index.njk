@@ -3,9 +3,10 @@
     <div class="content__inner">
         <div class="row text-center">
             <div class="col-12 col-md-6">
-                <h2 class="content__heading">Adela Ticha</h2>
+                <h2 class="content__heading">{{ t('name') }}</h2>
                 <p>
-                    When our family welcomed a new member Robin in September 2019, I&nbsp;realized it was the best time to jump into my old passion - <span class="strong">graphic&nbsp;design</span>.
+					{{ t('translate.me') }}
+                    {{ t('intro.story') }} <span class="strong">{{ t('intro.story.graphic') }}&nbsp;{{ t('intro.story.design') }}</span>.
                 </p>
                 <p>
                     Now during my maternity leave, I&nbsp;enjoy working in Inkscape and building logos for various projects.
@@ -25,7 +26,7 @@
     <div class="content__inner">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="content__heading">My Work</h2>
+                <h2 class="content__heading">{{ t('my.work') }}</h2>
             </div>
             {% for date, client in clients %}
               {% if not client.hidden %}
@@ -53,7 +54,7 @@
     <div class="content__inner">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="content__heading">Contacts</h2>
+                <h2 class="content__heading">{{ t('contacts') }}</h2>
             </div>
             <div class="col-12 col-md-6 content__center">
                 <p class="content__heading--contacts">

@@ -5,15 +5,15 @@
                 <img src="../images/logo-v1.svg" alt="Our Logo" height="60px">
             </div>
             <div class="col-12 col-md-4">
-                <h5>Menu</h5>
+                <h5>{{ t('menu') }}</h5>
                 <ul class="menu menu--footer">
-                    <li class="menu__item"><a href="#about-me">About me</a></li>
-                    <li class="menu__item"><a href="#my-work">My work</a></li>
-                    <li class="menu__item"><a href="#contact-me">Contact me</a></li>
+                    <li class="menu__item"><a href="#about-me">{{ t('about.me') }}</a></li>
+                    <li class="menu__item"><a href="#my-work">{{ t('my.work') }}</a></li>
+                    <li class="menu__item"><a href="#contact-me">{{ t('menu.contact') }}</a></li>
                 </ul>
             </div>
             <div class="col-12 col-md-4">
-                <h5>Get in touch</h5>
+                <h5>{{ t('footer.contacts') }}</h5>
                 <ul class="menu menu--footer">
                     <li class="menu__item"><a href="mailto:info@adelaticha.cz">info@adelaticha.cz</a>
                     <li class="menu__icon">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <p class="footer__copyright">
-            This site was created by Jiri Tichy &copy; {{ year }}
+			{{ t('created.by') }} &copy; {{ year }}
         </p>
     </div>
 </footer>
