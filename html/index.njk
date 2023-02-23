@@ -9,10 +9,10 @@
                     {{ t('intro.story') }} <span class="strong">{{ t('intro.story.graphic') }}&nbsp;{{ t('intro.story.design') }}</span>.
                 </p>
                 <p>
-                    Now during my maternity leave, I&nbsp;enjoy working in Inkscape and building logos for various projects.
+					{{ t('intro.skills') }}
                 </p>
                 <p>
-                    I like to learn about those projects. I&nbsp;am good at pointing out unique facts and use them for logo design. I&nbsp;am also focused on detail.
+                    {{ t('intro.qualities') }}
                 </p>
             </div>
             <div class="col-12 col-md-6">
@@ -41,7 +41,7 @@
                         <div class="overlay">
                             <h2>{{ client.name }}</h2>
                             <h3>{{ client.type }}</h3>
-                            <a class="info js-open-modal" href="{{ client.link }}">Show more</a>
+                            <a class="info js-open-modal" href="{{ client.link }}">{{ t('show.more') }}</a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="col-12 col-md-6 content__center">
                 <p class="content__heading--contacts">
-                    Phone: <a href="tel:+420776470413">+420 776 470 413</a>
+					{{ t('phone') }}: <a href="tel:+420776470413">+420 776 470 413</a>
                  </p>
                  <p class="content__heading--contacts">
                     E-mail: <a href="mailto:info@adelaticha.cz">info@adelaticha.cz</a>
@@ -66,20 +66,20 @@
             </div>
 			<div class="col-12 col-md-6 mt-3">
 				<p>
-					If you'd like me to get back to you, please send me a message. If you'll describe your needs in the message, we can talk specifically.
+					{{ t('get.in.touch') }}
 				</p>
 				<form action='<%= apiUrl %>/v1/contact-form' method="post" id="contact-form" enctype="multipart/form-data">
 					<div class="form-row mb-3">
-						<input type="text" class="form-control contact-form" name="name" placeholder="Name" required>
+						<input type="text" class="form-control contact-form" name="name" placeholder="{{ t('form.name') }}" required>
 					</div>
 					<div class="form-row mb-3">
 						<input type="email" class="form-control contact-form" name="email" placeholder="E-mail" required>
 					</div>
 					<div class="form-row mb-3">
-						<input type="tel" class="form-control contact-form" name="phone" placeholder="Phone Number" required>
+						<input type="tel" class="form-control contact-form" name="phone" placeholder="{{ t('form.phone') }}" required>
 					</div>
 					<div class="form-row mb-3">
-						<textarea class="form-control contact-form contact-form--message" name="message" placeholder="Your Message" rows="2" required></textarea>
+						<textarea class="form-control contact-form contact-form--message" name="message" placeholder="{{ t('form.message') }}" rows="2" required></textarea>
 					</div>
 					<div class="form-row">
 						<button
@@ -89,7 +89,7 @@
 							data-sitekey="<%= captchaSiteKey %>"
 							data-callback='onSubmit'
 							data-action='submit'
-						>Submit</button>
+						>{{ t('submit') }}</button>
 					</div>
 				</form>
 			</div>

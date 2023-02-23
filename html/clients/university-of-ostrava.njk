@@ -1,18 +1,18 @@
 {% set pageDate = '21. 4. 2021' %}
 {% set client = clients[pageDate] %}
 {% set pageTitle = client.name %}
-{% set pageDescription = 'My pasion for graphic design started during my studies at University of Ostrava. Here is the showcase of my screening portraits.' %}
+{% set pageDescription = 'My passion for graphic design started during my studies at University of Ostrava. Here is the showcase of my screening portraits.' %}
 {% set pageImage = client.image + '-md.jpg' %}
 
 {% include 'components/header.njk' %}
 <div class="content content--light content--beveled" id="about-me">
     <div class="content__inner">
-        <h4 id="page-title">Portrait</h4>
+        <h4 id="page-title">{{ t('uo.page.title') }}</h4>
 
         <div id="page-body">
-            <h3>University of Ostrava</h3>
+            <h3>{{ t('uo.name') }}</h3>
             <p>
-                My pasion for graphic design started during my studies at University of Ostrava. Here is the showcase of my screening portraits.
+                {{ t('uo.description') }}
             </p>
             <p><a href="https://www.osu.eu/"> www.osu.eu</a></p>
             <p class="mb-5 text-center">
