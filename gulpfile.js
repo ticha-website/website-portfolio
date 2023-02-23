@@ -27,7 +27,7 @@ const appVersion = (typeof (yargs.argv.appVersion) !== 'undefined') ? yargs.argv
 let webpackConfig = require('./webpack.config.js');
 
 const config = fs.readFileSync('./config.yml', 'utf8');
-const localeEn = YAML.parse(fs.readFileSync('./locale/en.yml', 'utf8'));
+const localeEn = YAML.parse(fs.readFileSync('./locale/cs.yml', 'utf8'));
 
 const sass = () => {
 	return gulp.src('scss/style-*.scss')
@@ -72,7 +72,9 @@ const nunjucks = () => {
 				},
 			},
 			t: (key) => { // translate https://stackoverflow.com/questions/45037317/can-nunjucks-output-files-in-multiple-languages
-
+				if (!localeEn.hasOwnProperty(key)) {
+					console.log(key);
+				}
 				return localeEn[key];
 			},
 			clients: require(__dirname + '/html/clients.json'),
@@ -149,6 +151,7 @@ const watch = (callback) => {
 	gulp.watch(['scss/**/*.scss'], watchConfig, gulp.parallel(css, hologram));
 	gulp.watch(['html/**/*.njk'], watchConfig, html);
 	gulp.watch(['scripts/**/*.ts'], watchConfig, js);
+	gulp.watch(['locale/**/*.yml'], watchConfig, html);
 
 	callback();
 };
