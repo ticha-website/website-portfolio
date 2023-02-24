@@ -11,26 +11,28 @@ function extractAndSendForm(formElement: HTMLFormElement): Promise<Response> {
 }
 
 async function showResult(formElement: HTMLFormElement, response: Response): Promise<void> {
-	const responseElement = document.createElement('p');
-	responseElement.classList.add('alert');
+	const responseElement = document.getElementById("successfully-send");
+	const responseElementNotOk = document.getElementById("not-send")
+
+	if (!responseElement || !responseElementNotOk) {
+		return;
+	}
+
 
 	if (response.ok) {
-		responseElement.classList.add('alert-success');
-		responseElement.innerText = 'Thank you!';
+		responseElement.classList.remove('d-none');
+		responseElementNotOk.classList.add('d-none');
 
 		formElement.replaceChildren();
-	} else {
-		responseElement.classList.add('alert-danger');
 
-		let content = 'Unknown error';
+	} else {
+		responseElementNotOk.classList.remove('d-none');
 
 		try {
-			content = await response.json();
+			responseElementNotOk.innerText = await response.json();
 		} catch (error) {
 			console.error(error);
 		}
-
-		responseElement.innerText = content;
 	}
 
 	formElement.insertBefore(responseElement, formElement.firstChild);
