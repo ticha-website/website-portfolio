@@ -2,6 +2,8 @@ about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
 email: info@adelaticha.cz
+email.is.invalid: Email is not valid
+email.is.missing: Email is missing
 error.page.homepage: homepage
 error.page.instruction: Please check the URL or go to the
 error.page.no.exist: Ooops, this page does not exist..
@@ -14,6 +16,8 @@ footer.contacts: Get in touch
 form.message: Your message
 form.name: Name
 form.phone: Phone number
+form.success: Thank you!
+form.unknown.error: Unknown error
 get.in.touch: If you'd like me to get back to you, please send me a message. If you'll describe your needs in the message, we can talk specifically.
 intro.skills: Now during my maternity leave, I enjoy working in Inkscape and building logos for various projects.
 intro.story: When our family welcomed a new member Robin in September 2019, I realized it was the best time to jump into my old passion -
@@ -24,13 +28,19 @@ lang: en-US
 logo.alt: My logo
 menu: Menu
 menu.contact: Contact me
+message.is.invalid: Message is not valid
+message.is.missing: Message is missing
 my.photo.alt: My photo
 my.work: My work
 name: Adela Ticha
+name.is.invalid: Name is not valid
+nama.is.missing: Name is missing
 page.description.main: I am graphic designer, working in Inkscape. I am good at pointing out unique facts and use them for logo design. I am also focused on detail.
 page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela
 page.title.main: Adela Ticha - Graphic Designer
 phone: Phone
+phone.is.invalid: Phone is not valid
+phone.is.missing: Phone is missing
 phone.number: +420 776 470 413
 show.more: Show more
 submit: Submit
