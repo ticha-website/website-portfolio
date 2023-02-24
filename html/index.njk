@@ -4,20 +4,13 @@
         <div class="row text-center">
             <div class="col-12 col-md-6">
                 <h2 class="content__heading">{{ t('name') }}</h2>
-                <p>
-					{{ t('translate.me') }}
-                    {{ t('intro.story') }} <span class="strong">{{ t('intro.story.graphic') }}&nbsp;{{ t('intro.story.design') }}</span>.
-                </p>
-                <p>
-					{{ t('intro.skills') }}
-                </p>
-                <p>
-                    {{ t('intro.qualities') }}
-                </p>
+                <p>{{ t('intro.story') }} <span class="strong">{{ t('intro.story.graphic') }}&nbsp;{{ t('intro.story.design') }}</span>.</p>
+                <p>{{ t('intro.skills') }}</p>
+                <p>{{ t('intro.qualities') }}</p>
             </div>
             <div class="col-12 col-md-6">
-                <img class="img-fluid d-none d-md-inline shadow-lg rounded-lg" src="../images/profile-picture-1000x850.jpg" alt="My Photo" width="500" height="425">
-                <img class="img-fluid d-md-none shadow rounded" src="../images/profile-picture-680x578.jpg" alt="My Photo" width="340" height="298">
+                <img class="img-fluid d-none d-md-inline shadow-lg rounded-lg" src="../images/profile-picture-1000x850.jpg" alt="{{ t('my.photo.alt') }}" width="500" height="425">
+                <img class="img-fluid d-md-none shadow rounded" src="../images/profile-picture-680x578.jpg" alt="{{ t('my.photo.alt') }}" width="340" height="298">
             </div>
         </div>
     </div>
@@ -58,16 +51,14 @@
             </div>
             <div class="col-12 col-md-6 content__center">
                 <p class="content__heading--contacts">
-					{{ t('phone') }}: <a href="tel:+420776470413">+420 776 470 413</a>
+					{{ t('phone') }}: <a href="tel:{{ t('phone.number') }}">{{ t('phone.number') }}</a>
                  </p>
                  <p class="content__heading--contacts">
-                    E-mail: <a href="mailto:info@adelaticha.cz">info@adelaticha.cz</a>
+                    E-mail: <a href="mailto:{{ t('email') }}">{{ t('email') }}</a>
                 </p>
             </div>
 			<div class="col-12 col-md-6 mt-3">
-				<p>
-					{{ t('get.in.touch') }}
-				</p>
+				<p>{{ t('get.in.touch') }}</p>
 				<form action='<%= apiUrl %>/v1/contact-form' method="post" id="contact-form" enctype="multipart/form-data">
 					<div class="form-row mb-3">
 						<input type="text" class="form-control contact-form" name="name" placeholder="{{ t('form.name') }}" required>

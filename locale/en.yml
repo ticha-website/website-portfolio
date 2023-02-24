@@ -1,11 +1,14 @@
 about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
+email: info@adelaticha.cz
 error.page.homepage: homepage
 error.page.instruction: Please check the URL or go to the
 error.page.no.exist: Ooops, this page does not exist..
 escootie.intro: eSootie was one of my first projects ever. Thanks to great cooperation with Tina (Founder of eScootie), I've learned many things that set me up on the right path.
 escootie.page.description: I have learned a lot during the cooperation with eScootie. In the end we came up with the great logo that exceeded our expectations.
+escootie.alt.picture.web: eScootie Web
+escootie.website: www.escootie.net
 escootie.work: For eScootie, I designed the logo that is used on the website.
 footer.contacts: Get in touch
 form.message: Your message
@@ -21,11 +24,19 @@ lang: en-US
 logo.alt: My logo
 menu: Menu
 menu.contact: Contact me
+my.photo.alt: My photo
 my.work: My work
 name: Adela Ticha
+page.description.main: I am graphic designer, working in Inkscape. I am good at pointing out unique facts and use them for logo design. I am also focused on detail.
+page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela
+page.title.main: Adela Ticha - Graphic Designer
 phone: Phone
+phone.number: +420 776 470 413
 show.more: Show more
 submit: Submit
 uo.name: University of Ostrava
 uo.description: My passion for graphic design started during my studies at University of Ostrava. Here is the showcase of my screening portraits.
 uo.page.title: Portrait
+uo.alt.picture.grandpa: Screening Portrait Grandpa
+uo.alt.picture.grandma: Screening Portrait Grandma
+uo.website: www.osu.eu

@@ -1,7 +1,7 @@
 {% set pageDate = '21. 4. 2021' %}
 {% set client = clients[pageDate] %}
 {% set pageTitle = client.name %}
-{% set pageDescription = 'My passion for graphic design started during my studies at University of Ostrava. Here is the showcase of my screening portraits.' %}
+{% set pageDescription = t('uo.description') %}
 {% set pageImage = client.image + '-md.jpg' %}
 
 {% include 'components/header.njk' %}
@@ -11,19 +11,17 @@
 
         <div id="page-body">
             <h3>{{ t('uo.name') }}</h3>
-            <p>
-                {{ t('uo.description') }}
-            </p>
-            <p><a href="https://www.osu.eu/"> www.osu.eu</a></p>
+            <p>{{ t('uo.description') }}</p>
+            <p><a href="https://{{ t('uo.website') }}/"> {{ t('uo.website') }}</a></p>
             <p class="mb-5 text-center">
-                <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandpa-264x395.jpg" alt="Screening Portrait Grandpa">
-                <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandpa-344x512.jpg" alt="Screening Portrait Grandpa">
-                <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandpa-530x789.jpg" alt="Screening Portrait Grandpa">
+                <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandpa-264x395.jpg" alt="{{ t('uo.alt.picture.grandpa') }}">
+                <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandpa-344x512.jpg" alt="{{ t('uo.alt.picture.grandpa') }}">
+                <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandpa-530x789.jpg" alt="{{ t('uo.alt.picture.grandpa') }}">
             </p>
             <p class="text-center">
-                <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandma-265x404.jpg" alt="Screening Portrait Grandma">
-                <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandma-344x524.jpg" alt="Screening Portrait Grandma">
-                <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandma-530x808.jpg" alt="Screening Portrait Grandma">
+                <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandma-265x404.jpg" alt="{{ t('uo.alt.picture.grandma') }}">
+                <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandma-344x524.jpg" alt="{{ t('uo.alt.picture.grandma') }}">
+                <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandma-530x808.jpg" alt="{{ t('uo.alt.picture.grandma') }}">
             </p>
         </div>
     </div>

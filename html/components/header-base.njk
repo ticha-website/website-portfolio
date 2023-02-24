@@ -1,9 +1,9 @@
-{% set pageTitleMain = 'Adela Ticha - Graphic Designer' %}
-{% set pageDescriptionMain = 'I am graphic designer, working in Inkscape. I am good at pointing out unique facts and use them for logo design. I am also focused on detail.' %}
-{% set pageKeywordsMain = 'logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela' %}
+{% set pageTitleMain = t('page.title.main') %}
+{% set pageDescriptionMain = t('page.description.main') %}
+{% set pageKeywordsMain = t('page.keywords.main') %}
 
 {% if pageTitle is defined %}
-	{% set title = pageTitle + ' | Adela Ticha' %}
+	{% set title = pageTitle + ' | ' + t('name') %}
 {% else %}
 	{% set title = pageTitleMain %}
 {% endif %}
@@ -26,11 +26,11 @@
     <meta name="description" content="{{ description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="{{ keywords }}">
-	<meta name="apple-mobile-web-app-title" content="Adela Ticha - Graphic Designer">
+	<meta name="apple-mobile-web-app-title" content="{{ t('page.title.main') }}">
 	<meta name="author" content="Jiri Tichy">
-	<meta name="twitter:site" content="Adela Ticha - Graphic Designer">
-	<meta name="application-name" content="Adela Ticha - Graphic Designer">
-	<meta property="og:site_name" content="Adela Ticha - Graphic Designer">
+	<meta name="twitter:site" content="{{ t('page.title.main') }}">
+	<meta name="application-name" content="{{ t('page.title.main') }}">
+	<meta property="og:site_name" content="{{ t('page.title.main') }}">
 	<meta property="og:type" content="service">
 	<meta name="twitter:card" content="summary_large_image">
 
