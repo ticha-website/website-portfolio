@@ -18,7 +18,6 @@ async function showResult(formElement: HTMLFormElement, response: Response): Pro
 		return;
 	}
 
-
 	if (response.ok) {
 		responseElement.classList.remove('d-none');
 		responseElementNotOk.classList.add('d-none');
