@@ -1,9 +1,0 @@
-version: "3.3"
-
-services:
-  website-portfolio:
-    image: michalsimon/static-website:node16
-    volumes:
-      - .:/www/
-      - /tmp/www/ticha/node_modules/:/www/node_modules/
-    working_dir: /www
