@@ -2,8 +2,8 @@ about.me: O mně
 created.by: Stránku vytvořil Jiří Tichý
 contacts: Kontakty
 email: info@adelaticha.cz
-email.is.invalid: Email je ve špatném formátu
-email.is.missing: Chybí vyplněný email
+email.invalid: Email je ve špatném formátu
+email.missing: Chybí vyplněný email
 error.page.homepage: domovskou stránku
 error.page.instruction: Zkontrolujte prosím URL, nebo navštivte
 error.page.no.exist: Ooops, tahle stránka neexistuje..
@@ -27,20 +27,20 @@ intro.qualities: Ráda se dozvídám o těchto projektech více, protože poté 
 lang: cs
 logo.alt: Moje logo
 menu: Menu
-message.is.invalid: Zpráva je ve špatném formátu
-message.is.missing: Chybí vyplněná zpráva
+message.invalid: Zpráva je ve špatném formátu
+message.missing: Chybí vyplněná zpráva
 menu.contact: Kontaktujte mě
 my.photo.alt: Moje fotka
 my.work: Moje práce
 name: Adéla Tichá
-name.is.invalid: Jméno je ve špatném formátu
-nama.is.missing: Chybí vyplněné jméno
+name.invalid: Jméno je ve špatném formátu
+name.missing: Chybí vyplněné jméno
 page.description.main: Jsem grafická designerka, která pracuje v Inkscapu. Dokáži vyzdvihnout unikátnost daného projektu a využít toho při tvorbě loga, především díky mému zaměření na detail.
 page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela, Adéla, Tichá, Adéla Tichá, grafický design, design aplikací, designer, designerka, grafická designerka, grafický designer
 page.title.main: Adéla Tichá - Grafická Designérka
 phone: Telefon
-phone.is.invalid: Telefonní číslo je ve špatném formátu
-phone.is.missing: Chybí vyplněné telefonní číslo
+phone.invalid: Telefonní číslo je ve špatném formátu
+phone.missing: Chybí vyplněné telefonní číslo
 phone.number: +420 776 470 413
 show.more: Ukaž více
 submit: Odeslat

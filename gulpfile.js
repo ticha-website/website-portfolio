@@ -55,6 +55,20 @@ const cssmin = () => {
 const css = gulp.series(sass, cssmin);
 
 const nunjucks = () => {
+	const translate = (key) => { // translate https://stackoverflow.com/questions/45037317/can-nunjucks-output-files-in-multiple-languages
+		if (!localeCs.hasOwnProperty(key)) {
+			console.log(key);
+		}
+		return localeCs[key];
+	};
+
+	const bulkTranslate = (messages, value) => {
+		return {
+			...messages,
+			[value]: translate(value),
+		}
+	}
+
 	return gulp.src([
 		'html/**/*.njk',
 		'!html/components/*.njk',
@@ -71,12 +85,17 @@ const nunjucks = () => {
 					height: 480,
 				},
 			},
-			t: (key) => { // translate https://stackoverflow.com/questions/45037317/can-nunjucks-output-files-in-multiple-languages
-				if (!localeCs.hasOwnProperty(key)) {
-					console.log(key);
-				}
-				return localeCs[key];
-			},
+			t: translate,
+			contactFormErrors: JSON.stringify([
+				'email.invalid',
+				'email.missing',
+				'message.invalid',
+				'message.missing',
+				'name.invalid',
+				'name.missing',
+				'phone.invalid',
+				'phone.missing',
+			].reduce(bulkTranslate, {})),
 			clients: require(__dirname + '/html/clients.json'),
 			year: new Date().getFullYear(),
 		}))

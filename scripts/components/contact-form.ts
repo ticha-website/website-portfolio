@@ -11,15 +11,19 @@ function extractAndSendForm(formElement: HTMLFormElement): Promise<Response> {
 }
 
 async function showResult(formElement: HTMLFormElement, response: Response): Promise<void> {
-	const responseElement = document.getElementById("successfully-send");
-	const responseElementNotOk = document.getElementById("not-send")
+	const responseElementSent = document.getElementById("successfully-send");
+	const responseElementNotOk = document.getElementById("not-send");
 
-	if (!responseElement || !responseElementNotOk) {
+	if (!responseElementSent || !responseElementNotOk || !responseElementNotOk.dataset?.messages) {
 		return;
 	}
 
+	const messages = JSON.parse(responseElementNotOk.dataset.messages) as Record<string, string>;
+
+	console.log(messages);
+
 	if (response.ok) {
-		responseElement.classList.remove('d-none');
+		responseElementSent.classList.remove('d-none');
 		responseElementNotOk.classList.add('d-none');
 
 		formElement.replaceChildren();
@@ -28,13 +32,14 @@ async function showResult(formElement: HTMLFormElement, response: Response): Pro
 		responseElementNotOk.classList.remove('d-none');
 
 		try {
-			responseElementNotOk.innerText = await response.json();
+			const error = (await response.json()) as string;
+			responseElementNotOk.innerText = messages[error];
 		} catch (error) {
 			console.error(error);
 		}
 	}
 
-	formElement.insertBefore(responseElement, formElement.firstChild);
+	formElement.insertBefore(responseElementSent, formElement.firstChild);
 }
 
 async function clickSubmitHandler(event: Event, formElement: HTMLFormElement): Promise<void> {

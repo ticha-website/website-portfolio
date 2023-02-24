@@ -2,8 +2,8 @@ about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
 email: info@adelaticha.cz
-email.is.invalid: Email is not valid
-email.is.missing: Email is missing
+email.invalid: Email is not valid
+email.missing: Email is missing
 error.page.homepage: homepage
 error.page.instruction: Please check the URL or go to the
 error.page.no.exist: Ooops, this page does not exist..
@@ -28,19 +28,19 @@ lang: en-US
 logo.alt: My logo
 menu: Menu
 menu.contact: Contact me
-message.is.invalid: Message is not valid
-message.is.missing: Message is missing
+message.invalid: Message is not valid
+message.missing: Message is missing
 my.photo.alt: My photo
 my.work: My work
 name: Adela Ticha
-name.is.invalid: Name is not valid
-nama.is.missing: Name is missing
+name.invalid: Name is not valid
+name.missing: Name is missing
 page.description.main: I am graphic designer, working in Inkscape. I am good at pointing out unique facts and use them for logo design. I am also focused on detail.
 page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela
 page.title.main: Adela Ticha - Graphic Designer
 phone: Phone
-phone.is.invalid: Phone is not valid
-phone.is.missing: Phone is missing
+phone.invalid: Phone is not valid
+phone.missing: Phone is missing
 phone.number: +420 776 470 413
 show.more: Show more
 submit: Submit
