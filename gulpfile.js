@@ -97,6 +97,10 @@ const nunjucks = () => {
 				'phone.missing',
 			].reduce(bulkTranslate, {})),
 			clients: require(__dirname + '/html/clients.json'),
+			languages: {
+				cs: '/',
+				en: '/en/',
+			},
 			year: new Date().getFullYear(),
 		}))
 		.pipe(rename({extname: '.html'}))
