@@ -61,6 +61,14 @@ Main menu in page header. It is still vertical on mobile.
         text-decoration: none;
       }
     }
+
+    &--flag {
+      display: inline-block;
+
+      img {
+        height: 1.25rem;
+      }
+    }
   }
 
   &--footer {
