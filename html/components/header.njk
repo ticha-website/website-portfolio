@@ -19,11 +19,11 @@
                         <li class="menu__item"><a href="#about-me">{{ t('about.me') }}</a></li>
                         <li class="menu__item"><a href="#my-work">{{ t('my.work') }}</a></li>
                         <li class="menu__item"><a href="#contact-me">{{ t('menu.contact') }}</a></li>
+						<li class="menu__item menu__item--flag">
 						{% for language, url in languages %}
-							<li class="menu__item menu__item--flag">
-								<a class="menu__item--flag" href="{{ url }}"><img src="../images/flag-{{ language }}.png" alt="{{ language }}"></a>
-							</li>
+								<a href="{{ url }}"><img src="../images/flag-{{ language }}.png" alt="{{ language }}"></a>
 						{% endfor %}
+						</li>
                     </ul>
                 </div>
             </div>

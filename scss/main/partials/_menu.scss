@@ -63,7 +63,7 @@ Main menu in page header. It is still vertical on mobile.
     }
 
     &--flag {
-      display: inline-block;
+      display: flex;
 
       img {
         height: 1.25rem;
@@ -109,6 +109,10 @@ Main menu in page header. It is still vertical on mobile.
 
         a {
           padding: 1.3rem;
+        }
+
+        &--flag {
+          display: inline-flex;
         }
       }
     }
