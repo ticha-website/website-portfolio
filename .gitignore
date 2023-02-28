@@ -2,7 +2,7 @@ node_modules/
 www/css/
 www/fonts/
 www/docs/
-www/*.html
+www/**/*.html
 temp/
 log/
 vendor/
