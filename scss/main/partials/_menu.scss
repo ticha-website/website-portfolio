@@ -89,12 +89,12 @@ Use `menu_item--flag` to add pictures of flags into menu.
 
     &--flag {
       display: flex;
+      justify-content: flex-end;
 
       img {
         border: .04rem solid $color-black;
         border-radius: .1rem;
         height: 1rem;
-        width: 1.25rem;
       }
     }
   }
