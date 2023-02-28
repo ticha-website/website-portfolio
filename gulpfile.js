@@ -27,7 +27,7 @@ const appVersion = (typeof (yargs.argv.appVersion) !== 'undefined') ? yargs.argv
 let webpackConfig = require('./webpack.config.js');
 
 const config = fs.readFileSync('./config.yml', 'utf8');
-const localeCs = YAML.parse(fs.readFileSync('./locale/cs.yml', 'utf8'));
+const locales = fs.readdirSync('./locale').map((locale) => locale.replace('.yml', ''));
 
 const sass = () => {
 	return gulp.src('scss/style-*.scss')
@@ -54,58 +54,85 @@ const cssmin = () => {
 
 const css = gulp.series(sass, cssmin);
 
-const nunjucks = () => {
-	const translate = (key) => { // translate https://stackoverflow.com/questions/45037317/can-nunjucks-output-files-in-multiple-languages
-		if (!localeCs.hasOwnProperty(key)) {
-			console.log(key);
-		}
-		return localeCs[key];
-	};
+const translate = (translations) => (key) => {
+	if (!translations.hasOwnProperty(key)) {
+		console.log(key);
+		return `[${key}]`;
+	}
+	return translations[key];
+};
 
-	const bulkTranslate = (messages, value) => {
-		return {
-			...messages,
-			[value]: translate(value),
-		}
+const bulkTranslate = (translations) => (messages, value) => {
+	return {
+		...messages,
+		[value]: translate(translations)(value),
+	}
+}
+
+const resolvePrefix = (locale) => locale === 'cs' ? '' : `/${locale}`;
+
+const constructLangSwitch = locales.reduce((map, locale) => {
+	const prefix = resolvePrefix(locale);
+	const link = `${prefix}/index.html`;
+
+	return {
+		...map,
+		[locale]: link,
+	}
+}, {});
+
+const contactFormErrors = [
+	'email.invalid',
+	'email.missing',
+	'message.invalid',
+	'message.missing',
+	'name.invalid',
+	'name.missing',
+	'phone.invalid',
+	'phone.missing',
+];
+
+const nunjucksParams = {
+	clientHeadPictureSizes: {
+		sm: {
+			width: 340,
+			height: 272,
+		},
+		md: {
+			width: 500,
+			height: 480,
+		},
+	},
+	clients: require(__dirname + '/html/clients.json'),
+	languages: constructLangSwitch,
+	year: new Date().getFullYear(),
+};
+
+const nunjucksFiles = [
+	'html/**/*.njk',
+	'!html/components/*.njk',
+];
+
+const generateHtmlTasks = [];
+
+for (const locale of locales) {
+	const generateHtml = () => {
+		const translations = YAML.parse(fs.readFileSync(`./locale/${locale}.yml`, 'utf8'));
+
+		return gulp.src(nunjucksFiles)
+			.pipe(gulpNunjucks.compile({
+				...nunjucksParams,
+				t: translate(translations),
+				contactFormErrors: JSON.stringify(contactFormErrors.reduce(bulkTranslate(translations), {})),
+			}))
+			.pipe(rename({extname: '.html'}))
+			.pipe(gulp.dest(`temp/html/${resolvePrefix(locale)}`));
 	}
 
-	return gulp.src([
-		'html/**/*.njk',
-		'!html/components/*.njk',
-	])
+	generateHtmlTasks.push(generateHtml);
+}
 
-		.pipe(gulpNunjucks.compile({
-			clientHeadPictureSizes: {
-				sm: {
-					width: 340,
-					height: 272,
-				},
-				md: {
-					width: 500,
-					height: 480,
-				},
-			},
-			t: translate,
-			contactFormErrors: JSON.stringify([
-				'email.invalid',
-				'email.missing',
-				'message.invalid',
-				'message.missing',
-				'name.invalid',
-				'name.missing',
-				'phone.invalid',
-				'phone.missing',
-			].reduce(bulkTranslate, {})),
-			clients: require(__dirname + '/html/clients.json'),
-			languages: {
-				cs: '/',
-				en: '/en/',
-			},
-			year: new Date().getFullYear(),
-		}))
-		.pipe(rename({extname: '.html'}))
-		.pipe(gulp.dest('temp/html/'));
-};
+const nunjucks = gulp.parallel(...generateHtmlTasks);
 
 const htmlmin = () => {
 	let stream = gulp.src([
@@ -173,6 +200,7 @@ const watch = (callback) => {
 	};
 	gulp.watch(['scss/**/*.scss'], watchConfig, gulp.parallel(css, hologram));
 	gulp.watch(['html/**/*.njk'], watchConfig, html);
+	gulp.watch(['locale/**/*.yml'], watchConfig, html);
 	gulp.watch(['scripts/**/*.ts'], watchConfig, js);
 
 	callback();
