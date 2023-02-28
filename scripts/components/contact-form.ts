@@ -37,6 +37,8 @@ async function showResult(formElement: HTMLFormElement, response: Response): Pro
 		} catch (error) {
 			console.error(error);
 		}
+		//@ts-ignore
+		formElement.elements.namedItem('submit').classList.remove('disabled');
 	}
 
 	formElement.insertBefore(responseElementSent, formElement.firstChild);
@@ -48,9 +50,16 @@ async function clickSubmitHandler(event: Event, formElement: HTMLFormElement): P
 	}
 
 	event.preventDefault();
+	//@ts-ignore
+	event.target.classList.add('disabled');
 
-	const result = await extractAndSendForm(formElement);
+	let result: Response;
 
+	try {
+		result = await extractAndSendForm(formElement);
+	} catch (error) {
+		result = error as Response;
+	}
 	await showResult(formElement, result);
 }
 
