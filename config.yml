@@ -4,3 +4,20 @@ pageUrl: 'http://localhost:8000'
 googleAnalytics: 'G-xxxxxxxxx'
 apiUrl: 'http://localhost:4000'
 captchaSiteKey: false
+clientHeadPictureSizes:
+    sm:
+        width: 340
+        height: 272
+    md:
+        width: 500
+        height: 480
+
+contactFormErrors:
+    - email.invalid
+    - email.missing
+    - message.invalid
+    - message.missing
+    - name.invalid
+    - name.missing
+    - phone.invalid
+    - phone.missing

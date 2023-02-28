@@ -37,6 +37,31 @@ Main menu in page header. It is still vertical on mobile.
 </ul>
 ```
 
+### Flags in Horizontal menu
+Use `menu_item--flag` to add pictures of flags into menu.
+
+```html_example
+<ul class="menu">
+  <li class="menu__item"><a href="#">Home</a></li>
+  <li class="menu__item"><a href="#">My work</a></li>
+  <li class="menu__item menu__item--flag">
+    <a href="/"><img src="../images/flag-cs.jpg" alt="{{ cs }}"></a>
+    <a href="/en/"><img src="../images/flag-en.jpg" alt="{{ en }}"></a>
+  </li>
+</ul>
+```
+
+```html_example
+<ul class="menu menu--horizontal">
+  <li class="menu__item"><a href="#">Home</a></li>
+  <li class="menu__item"><a href="#">My work</a></li>
+  <li class="menu__item menu__item--flag">
+    <a href="/"><img src="../images/flag-cs.jpg" alt="{{ cs }}"></a>
+    <a href="/en/"><img src="../images/flag-en.jpg" alt="{{ en }}"></a>
+  </li>
+</ul>
+```
+
  */
 
 .menu {
@@ -59,6 +84,18 @@ Main menu in page header. It is still vertical on mobile.
         background: $gray-100;
         color: $primary;
         text-decoration: none;
+      }
+    }
+
+    &--flag {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        border: .04rem solid $color-black;
+        border-radius: .1rem;
+        height: 1rem;
+        width: 1.5rem;
       }
     }
   }
@@ -101,6 +138,10 @@ Main menu in page header. It is still vertical on mobile.
 
         a {
           padding: 1.3rem;
+        }
+
+        &--flag {
+          display: inline-flex;
         }
       }
     }
