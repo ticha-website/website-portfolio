@@ -26,8 +26,66 @@ const appVersion = (typeof (yargs.argv.appVersion) !== 'undefined') ? yargs.argv
 
 let webpackConfig = require('./webpack.config.js');
 
-const config = fs.readFileSync('./config.yml', 'utf8');
+const config = YAML.parse(fs.readFileSync('./config.yml', 'utf8'));
 const locales = fs.readdirSync('./locale').map((locale) => locale.replace('.yml', ''));
+
+const translate = (dictionary) => (key) => {
+	if (!dictionary.hasOwnProperty(key)) {
+		console.log(key);
+		return `[${key}]`;
+	}
+	return dictionary[key];
+}
+
+const bulkTranslate = (dictionary) => (messages, value) => {
+	return {
+		...messages,
+		[value]: translate(dictionary)(value),
+	}
+}
+
+const resolvePrefix = (locale) => locale === 'cs' ? '' : `/${locale}`;
+
+const constructLangSwitch = locales.reduce((map, locale) => {
+	const prefix = resolvePrefix(locale);
+	const link = `${prefix}/index.html`;
+
+	return {
+		...map,
+		[locale]: link,
+	}
+}, {});
+
+const nunjucksParams = {
+	clientHeadPictureSizes: config.clientHeadPictureSizes,
+	clients: require(__dirname + '/html/clients.json'),
+	languages: constructLangSwitch,
+	year: new Date().getFullYear(),
+};
+
+const nunjucksFiles = [
+	'html/**/*.njk',
+	'!html/components/*.njk',
+];
+
+const generateHtmlTasks = [];
+
+for (const locale of locales) {
+	const generateHtml = () => {
+		const dictionary = YAML.parse(fs.readFileSync(`./locale/${locale}.yml`, 'utf8'));
+
+		return gulp.src(nunjucksFiles)
+			.pipe(gulpNunjucks.compile({
+				...nunjucksParams,
+				t: translate(dictionary),
+				contactFormErrors: JSON.stringify(config.contactFormErrors.reduce(bulkTranslate(dictionary), {})),
+			}))
+			.pipe(rename({extname: '.html'}))
+			.pipe(gulp.dest(`temp/html/${resolvePrefix(locale)}`));
+	}
+
+	generateHtmlTasks.push(generateHtml);
+}
 
 const sass = () => {
 	return gulp.src('scss/style-*.scss')
@@ -54,84 +112,6 @@ const cssmin = () => {
 
 const css = gulp.series(sass, cssmin);
 
-const translate = (translations) => (key) => {
-	if (!translations.hasOwnProperty(key)) {
-		console.log(key);
-		return `[${key}]`;
-	}
-	return translations[key];
-};
-
-const bulkTranslate = (translations) => (messages, value) => {
-	return {
-		...messages,
-		[value]: translate(translations)(value),
-	}
-}
-
-const resolvePrefix = (locale) => locale === 'cs' ? '' : `/${locale}`;
-
-const constructLangSwitch = locales.reduce((map, locale) => {
-	const prefix = resolvePrefix(locale);
-	const link = `${prefix}/index.html`;
-
-	return {
-		...map,
-		[locale]: link,
-	}
-}, {});
-
-const contactFormErrors = [
-	'email.invalid',
-	'email.missing',
-	'message.invalid',
-	'message.missing',
-	'name.invalid',
-	'name.missing',
-	'phone.invalid',
-	'phone.missing',
-];
-
-const nunjucksParams = {
-	clientHeadPictureSizes: {
-		sm: {
-			width: 340,
-			height: 272,
-		},
-		md: {
-			width: 500,
-			height: 480,
-		},
-	},
-	clients: require(__dirname + '/html/clients.json'),
-	languages: constructLangSwitch,
-	year: new Date().getFullYear(),
-};
-
-const nunjucksFiles = [
-	'html/**/*.njk',
-	'!html/components/*.njk',
-];
-
-const generateHtmlTasks = [];
-
-for (const locale of locales) {
-	const generateHtml = () => {
-		const translations = YAML.parse(fs.readFileSync(`./locale/${locale}.yml`, 'utf8'));
-
-		return gulp.src(nunjucksFiles)
-			.pipe(gulpNunjucks.compile({
-				...nunjucksParams,
-				t: translate(translations),
-				contactFormErrors: JSON.stringify(contactFormErrors.reduce(bulkTranslate(translations), {})),
-			}))
-			.pipe(rename({extname: '.html'}))
-			.pipe(gulp.dest(`temp/html/${resolvePrefix(locale)}`));
-	}
-
-	generateHtmlTasks.push(generateHtml);
-}
-
 const nunjucks = gulp.parallel(...generateHtmlTasks);
 
 const htmlmin = () => {
@@ -142,7 +122,7 @@ const htmlmin = () => {
 
 	if (development) {
 		stream = stream.pipe(template({
-			...YAML.parse(config),
+			...config,
 		}));
 	}
 
