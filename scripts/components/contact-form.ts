@@ -44,10 +44,11 @@ async function showResult(formElement: HTMLFormElement, response: Response): Pro
 	formElement.insertBefore(responseElementSent, formElement.firstChild);
 }
 
-
-
-
-
+async function clickSubmitHandler(event: Event, formElement: HTMLFormElement): Promise<void> {
+	if (!formElement.reportValidity()) {
+		return;
+	}
+	
 	event.preventDefault();
 	//@ts-ignore
 	event.target.classList.add('disabled');
