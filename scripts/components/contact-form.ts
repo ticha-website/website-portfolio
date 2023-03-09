@@ -49,7 +49,6 @@ async function clickSubmitHandler(event: Event, formElement: HTMLFormElement): P
 		return;
 	}
 
-	
 	event.preventDefault();
 	//@ts-ignore
 	event.target.classList.add('disabled');
