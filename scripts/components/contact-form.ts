@@ -48,6 +48,7 @@ async function clickSubmitHandler(event: Event, formElement: HTMLFormElement): P
 	if (!formElement.reportValidity()) {
 		return;
 	}
+
 	
 	event.preventDefault();
 	//@ts-ignore
