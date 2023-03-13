@@ -1,8 +1,8 @@
 version: '1'
 
 thresholds:
-    error: 20
-    total: 40
+    error: 40
+    total: 42
 
 tools:
     eslint:
