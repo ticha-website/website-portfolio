@@ -1,5 +1,5 @@
 about.me: O mně
-created.by: Stránku vytvořil Jiří.--.
+created.by: Stránku vytvořil Jiří Tichý
 contacts: Kontakty
 email: info@adelaticha.cz
 email.invalid: Email je ve špatném formátu
@@ -18,12 +18,12 @@ form.name: Jméno
 form.phone: Telefonní číslo
 form.success: Děkuji za vaši zprávu!
 form.unknown.error: Neznámá chyba
-get.in.touch: Pokud chcete, abych vás kontaktovala, prosím pošlete mi zprávu. Pokud popíšete vaše požadavky, můžeme se bavit specificky.
-intro.skills: Nyní, během mateřské, si užívám práci v Inkscape a vytvářím loga pro různé projekty.
-intro.story: Když jsme v září 2019 přivítali nového člena rodiny Robina, uvědomila jsem, že nastal ten nejlepší čas na moji starou vášeň -
-intro.story.design: design
-intro.story.graphic: grafický
-intro.qualities: Ráda se dozvídám o těchto projektech více, protože poté dokážu vyzdvihnout unikátnost daného projektu a využít toho při tvorbě loga, především díky mému zaměření na detail.
+get.in.touch: Dejte mi o sobě vědět, vymyslíme spolu zázraky.
+intro.skills: Pracuju v Inkscape. Věnuju se vytváření brandu.
+intro.story: Kreativita byla pro mě vždycky to, co mě zvedlo ze židle. U tvorby nevnímám čas. Rodičák se dvěma klukama mě nakopl k tomu, abych se naplno věnovala
+intro.story.design: designu
+intro.story.graphic: grafickému
+intro.qualities: Chci znát vaši značku a příběh do poslední tečky. Aby to, co vzejde z naší spolupráce, stálo za to.
 lang: cs
 logo.alt: Moje logo
 menu: Menu
@@ -35,7 +35,7 @@ my.work: Moje práce
 name: Adéla Tichá
 name.invalid: Jméno je ve špatném formátu
 name.missing: Chybí vyplněné jméno
-page.description.main: Jsem grafická designerka, která pracuje v Inkscapu. Dokáži vyzdvihnout unikátnost daného projektu a využít toho při tvorbě loga, především díky mému zaměření na detail.
+page.description.main: Jsem grafická designerka, která pracuje v Inkscape. Věnuji se vytváření brandu. Chci znát vaši značku a příběh do poslední tečky.
 page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela, Adéla, Tichá, Adéla Tichá, grafický design, design aplikací, designer, designerka, grafická designerka, grafický designer
 page.title.main: Adéla Tichá - Grafická Designérka
 phone: Telefon
