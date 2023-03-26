@@ -2,7 +2,7 @@ version: '1'
 
 thresholds:
     error: 20
-    total: 31
+    total: 30
 
 tools:
     eslint:
