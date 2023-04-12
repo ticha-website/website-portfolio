@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="47.625004mm"
+   height="47.625004mm"
+   version="1.1"
+   viewBox="0 0 47.625002 47.625003"
+   id="svg859"
+   sodipodi:docname="apple-touch-icon.svg"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   inkscape:export-filename="C:\projects\ticha\website\www\images\logo-v1.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs863" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     id="namedview861"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="2.4195758"
+     inkscape:cx="106.42361"
+     inkscape:cy="81.212583"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg859"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm" />
+  <metadata
+     id="metadata833">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <text
+     fill="#00ffff"
+     font-family="'Halogen by Pixel Surplus'"
+     font-size="25.4px"
+     style="line-height:1.25;white-space:pre;shape-inside:url(#rect837)"
+     xml:space="preserve"
+     id="text835"
+     x="-33.519001"
+     y="-30.993" />
+  <text
+     x="21.805513"
+     y="26.737467"
+     font-family="'Halogen by Pixel Surplus'"
+     font-size="10.583px"
+     stroke-width="0.26458"
+     style="line-height:1.25"
+     xml:space="preserve"
+     id="text839"><tspan
+       x="21.805513"
+       y="26.737467"
+       stroke-width="0.26458"
+       id="tspan837" /></text>
+  <g
+     id="g950">
+    <path
+       d="M 2.2447681,2.2447681 H 45.380232 V 45.380232 H 2.2447681 Z"
+       fill="#c3073f"
+       fill-rule="evenodd"
+       stroke="#1a1a1d"
+       stroke-linejoin="round"
+       stroke-width="4.48954"
+       style="fill:#ffffff;paint-order:stroke fill markers"
+       id="path841" />
+    <g
+       transform="matrix(1.7958145,0,0,1.7958145,-225.30289,-124.74266)"
+       fill="#1a1a1d"
+       style="white-space:pre;shape-inside:url(#rect847)"
+       aria-label="T"
+       id="g845">
+      <path
+         d="m 138.72,89.411 q -0.41487,0 -0.6223,-0.20743 -0.20743,-0.20743 -0.20743,-0.6223 v -10.885 h -3.8326 q -0.41487,0 -0.6223,-0.20743 -0.20744,-0.20743 -0.20744,-0.6223 0,-0.41487 0.20744,-0.6223 0.20743,-0.20743 0.6223,-0.20743 h 9.3246 q 0.41487,0 0.6223,0.20743 0.20744,0.20743 0.20744,0.6223 0,0.41487 -0.20744,0.6223 -0.20743,0.20743 -0.6223,0.20743 h -3.8326 v 10.885 q 0,0.39511 -0.21732,0.61242 -0.20743,0.21731 -0.61242,0.21731 z"
+         fill="#1a1a1d"
+         id="path843" />
+    </g>
+  </g>
+</svg>
