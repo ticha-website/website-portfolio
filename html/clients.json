@@ -1,13 +1,13 @@
 {
   "20. 4. 2021": {
     "name": "eScootie",
-    "type": "logo",
+    "title": "escootie.page.title",
     "link": "/clients/escootie.html",
     "image": "/images/clients/eScootie-logo-v.1"
   },
   "21. 4. 2023": {
     "name": "Denis Hofman",
-    "type": "vizitka",
+    "title": "hofman.page.title",
     "link": "/clients/denis-hofman.html",
     "image": "/images/clients/temp-denis-hofman"
   }
