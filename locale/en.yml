@@ -2,6 +2,12 @@ about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
 client.link.lang: /en
+denis.intro: blablabla
+denis.page.description: BlaBlaBla
+denis.page.title: business card
+denis.page.name: Fly with Denis
+denis.alt.picture: Business Card Showcase
+denis.work: blablabla
 email: info@adelaticha.cz
 email.invalid: Email is not valid
 email.missing: Email is missing
@@ -22,12 +28,6 @@ form.phone: Phone number
 form.success: Thank you!
 form.unknown.error: Unknown error
 get.in.touch: Leave a note and let me help to refresh your business.
-hofman.intro: blablabla
-hofman.page.description: BlaBlaBla
-hofman.page.title: business card
-hofman.page.name: Denis Hofman
-hofman.alt.picture: Business Card Showcase
-hofman.work: blablabla
 intro.skills: I work with Inkscape. I create brand designs.
 intro.story: Creativity pumps blood in my veins. When I am in the process I am loosing a concept of time. Parental leave with two boys made me focus on what I enjoy and do the best -
 intro.story.design: design
