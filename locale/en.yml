@@ -6,7 +6,8 @@ denis.intro: blablabla
 denis.page.description: BlaBlaBla
 denis.page.title: business card
 denis.page.name: Fly with Denis
-denis.alt.picture: Business Card Showcase
+denis.alt.front: Front side of the business card
+denis.alt.back: Back side of the business card
 denis.work: blablabla
 email: info@adelaticha.cz
 email.invalid: Email is not valid
