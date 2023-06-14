@@ -2,13 +2,13 @@ about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
 client.link.lang: /en
-denis.intro: blablabla
-denis.page.description: BlaBlaBla
+denis.intro: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+denis.page.description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 denis.page.title: business card
 denis.page.name: Fly with Denis
 denis.alt.front: Front side of the business card
 denis.alt.back: Back side of the business card
-denis.work: blablabla
+denis.work: Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 email: info@adelaticha.cz
 email.invalid: Email is not valid
 email.missing: Email is missing
