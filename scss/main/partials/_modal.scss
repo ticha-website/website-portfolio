@@ -13,23 +13,22 @@ Use `modal` for creating the popup with detailed information about the work.
     <div class="modal-content">
       <div class="modal-header">
         <h4 class="modal-title">Type | of | Work</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">
         </button>
       </div>
       <div class="modal-body">
         <h3>Name of Client</h3>
         <p>Description of Client - Here should be one or two sentences about the client, for example what industry s/he from, etc.</p>
         <p> <a href="https://www.staging.adelaticha.cz/"> www.staging.adelaticha.cz</a> </p>
-        <p class="mb-5 text-center">
-          <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandpa-264x395.jpg" alt="Screening Portrait Grandpa">
-          <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandpa-344x512.jpg" alt="Screening Portrait Grandpa">
-          <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandpa-530x789.jpg" alt="Screening Portrait Grandpa">
+        <p class="text-center">
+          <img class="rounded img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/fly-with-denis-front-500x324.jpg" alt="{{ t('denis.alt.front') }}">
+          <img class="rounded img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/fly-with-denis-front-750x486.jpg" alt="{{ t('denis.alt.front') }}">
+          <img class="rounded img-fluid d-none d-xl-inline-block" src="/images/clients/fly-with-denis-front-1000x647.jpg" alt="{{ t('denis.alt.front') }}">
         </p>
         <p class="text-center">
-          <img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="../images/clients/screening-portrait-grandma-265x404.jpg" alt="Screening Portrait Grandma">
-          <img class="img-fluid d-none d-md-inline-block d-lg-none" src="../images/clients/screening-portrait-grandma-344x524.jpg" alt="Screening Portrait Grandma">
-          <img class="img-fluid d-none d-lg-inline-block" src="../images/clients/screening-portrait-grandma-530x808.jpg" alt="Screening Portrait Grandma">
+          <img class="rounded img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/fly-with-denis-back-500x324.jpg" alt="{{ t('denis.alt.back') }}">
+          <img class="rounded img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/fly-with-denis-back-750x486.jpg" alt="{{ t('denis.alt.back') }}">
+          <img class="rounded img-fluid d-none d-xl-inline-block" src="/images/clients/fly-with-denis-back-1000x647.jpg" alt="{{ t('denis.alt.back') }}">
         </p>
       </div>
     </div>
