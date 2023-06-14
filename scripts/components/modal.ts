@@ -30,9 +30,7 @@ function registerCloseModalListener(): void {
 
 function openModal(title: string, body: string): void {
 	const closeButtonHtml = `
-		<button id="${closeButtonId}" type="button" class="close" data-dismiss="modal" aria-label="Close">
-	    <span aria-hidden="true">&times;</span>
-	  </button>
+		<button id="${closeButtonId}" type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
 	`;
 
 	const modalHtml = `

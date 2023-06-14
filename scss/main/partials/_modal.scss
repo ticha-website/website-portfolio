@@ -86,6 +86,13 @@ Use `modal` for creating the popup with detailed information about the work.
     font-size: 1rem;
     padding-left: 2.5rem;
   }
+
+  .btn-close {
+    &:active,
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 .modal-body {
