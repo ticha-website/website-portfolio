@@ -9,8 +9,8 @@
                 <p>{{ t('intro.qualities') }}</p>
             </div>
             <div class="col-12 col-md-6">
-                <img class="img-fluid d-none d-md-inline shadow-lg rounded-lg" src="/images/profile-picture-1000x850.jpg" alt="{{ t('my.photo.alt') }}" width="500" height="425">
-                <img class="img-fluid d-md-none shadow rounded" src="/images/profile-picture-680x578.jpg" alt="{{ t('my.photo.alt') }}" width="340" height="298">
+                <img class="img-fluid d-none d-md-inline shadow-lg rounded-lg" src="/images/profile-picture-1000x850.jpg?v<%= version %>" alt="{{ t('my.photo.alt') }}" width="500" height="425">
+                <img class="img-fluid d-md-none shadow rounded" src="/images/profile-picture-680x578.jpg?v<%= version %>" alt="{{ t('my.photo.alt') }}" width="340" height="298">
             </div>
         </div>
     </div>
@@ -27,10 +27,10 @@
                     <div class="portfolio">
                         <img class="img-fluid d-md-none" width="{{ clientHeadPictureSizes.sm.width }}"
 					    	height="{{ clientHeadPictureSizes.sm.height }}" alt="{{ client.name }}"
-							src="{{ client.image }}-sm.jpg?">
+							src="{{ client.image }}-sm.jpg?v<%= version %>">
                         <img class="img-fluid d-none d-md-inline" width="{{ clientHeadPictureSizes.md.width }}"
 					    	height="{{ clientHeadPictureSizes.md.height }}" alt="{{ client.name }}"
-							src="{{ client.image }}-md.jpg?">
+							src="{{ client.image }}-md.jpg?v<%= version %>">
                         <div class="overlay">
                             <h2>{{ client.name }}</h2>
                             <h3>{{ t(client.title) }}</h3>
