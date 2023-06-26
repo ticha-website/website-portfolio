@@ -5,7 +5,7 @@
         <div class="row justify-content-md-between">
             <div class="col-12 col-md-3">
                 <a class="header__logo" href="/#">
-                    <img src="/images/logo-v1.svg" alt="{{ t('logo.alt') }}" height="50">
+                    <img src="/images/logo.svg?v<%= version %>" alt="{{ t('logo.alt') }}" height="50">
                 </a>
                 <a class="menu__toggler menu__toggler--sticked d-md-none" id="main-menu-toggler" href="#"
                 data-target="#main-menu" aria-controls="main-menu" aria-expanded="false"
@@ -21,7 +21,7 @@
                         <li class="menu__item"><a href="#contact-me">{{ t('menu.contact') }}</a></li>
 						<li class="menu__item menu__item--flag">
 						{% for language, url in languages %}
-								<a href="{{ url }}"><img src="/images/flag-{{ language }}.jpg" alt="{{ language }}"></a>
+								<a href="{{ url }}"><img src="/images/flag-{{ language }}.jpg?v<%= version %>" alt="{{ language }}"></a>
 						{% endfor %}
 						</li>
                     </ul>
