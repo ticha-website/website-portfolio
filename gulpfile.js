@@ -61,6 +61,7 @@ const nunjucksParams = {
 	clients: require(__dirname + '/html/clients.json'),
 	languages: constructLangSwitch,
 	year: new Date().getFullYear(),
+	resolvePrefix,
 };
 
 const nunjucksFiles = [
@@ -79,6 +80,7 @@ for (const locale of locales) {
 				...nunjucksParams,
 				t: translate(dictionary),
 				contactFormErrors: JSON.stringify(config.contactFormErrors.reduce(bulkTranslate(dictionary), {})),
+				locale,
 			}))
 			.pipe(rename({extname: '.html'}))
 			.pipe(gulp.dest(`temp/html/${resolvePrefix(locale)}`));

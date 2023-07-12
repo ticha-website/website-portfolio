@@ -34,7 +34,7 @@
                         <div class="overlay">
                             <h2>{{ client.name }}</h2>
                             <h3>{{ t(client.title) }}</h3>
-                            <a class="info js-open-modal" href="{{ t('client.link.lang') }}{{ client.link }}">{{ t('show.more') }}</a>
+                            <a class="info js-open-modal" href="{{ resolvePrefix(locale) }}{{ client.link }}">{{ t('show.more') }}</a>
                         </div>
                     </div>
                 </div>
