@@ -35,14 +35,14 @@ const translate = (dictionary) => (key) => {
 		return `[${key}]`;
 	}
 	return dictionary[key];
-}
+};
 
 const bulkTranslate = (dictionary) => (messages, value) => {
 	return {
 		...messages,
 		[value]: translate(dictionary)(value),
-	}
-}
+	};
+};
 
 const resolvePrefix = (locale) => locale === 'cs' ? '' : `/${locale}`;
 
@@ -53,7 +53,7 @@ const constructLangSwitch = locales.reduce((map, locale) => {
 	return {
 		...map,
 		[locale]: link,
-	}
+	};
 }, {});
 
 const nunjucksParams = {
@@ -82,7 +82,7 @@ for (const locale of locales) {
 			}))
 			.pipe(rename({extname: '.html'}))
 			.pipe(gulp.dest(`temp/html/${resolvePrefix(locale)}`));
-	}
+	};
 
 	generateHtmlTasks.push(generateHtml);
 }
