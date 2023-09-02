@@ -5,5 +5,4 @@ services:
     image: michalsimon/static-website:node16
     volumes:
       - .:/www/
-      - /tmp/ticha/website/node_modules/:/www/node_modules/
     working_dir: /www
