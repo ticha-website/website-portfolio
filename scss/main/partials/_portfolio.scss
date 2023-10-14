@@ -25,7 +25,6 @@ Portfolio class allows you to do the hover effect for displays that are larger t
   margin-bottom: .4rem;
   overflow: hidden;
   position: relative;
-  text-align: left;
 
   @include media-breakpoint-up(md) {
     margin-bottom: 1.5rem;
@@ -63,9 +62,11 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     background-color: transparent;
     height: 100%;
     left: 0;
-    opacity: 1;
+    opacity: 0;
     overflow: hidden;
     position: absolute;
+    text-decoration: none;
+    vertical-align: middle;
     top: 0;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
@@ -74,6 +75,21 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     @include media-breakpoint-up(md) {
       background-color: $color-portfolio;
       opacity: 0;
+
+    &:hover {
+      background-color: $color-white;
+      filter: alpha(opacity=100);
+      opacity: 1;
+    }
+
+    h2 {
+      color: $color-black;
+      font-size: 2rem;
+      font-weight: 800;
+      text-align: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
