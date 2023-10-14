@@ -43,6 +43,7 @@ The other variant with color backgroung which is used on the page.
 */
 
 .content {
+  background: $color-white;
   overflow: hidden;
   padding-bottom: $content-padding;
   padding-top: $content-padding + 3rem;
