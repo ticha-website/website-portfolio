@@ -10,9 +10,10 @@ Portfolio class allows you to do the hover effect for displays that are larger t
 ```html_example
 <div class="portfolio">
     <img class="img-fluid" src="../images/clients/eScootie-logo-md.jpg?v<%= version %>">
-    <a class="overlay js-open-modal" href="#">
+    <div class="overlay">
         <h2>Clients name</h2>
-    </a>
+        <a class="overlay overlay__link js-open-modal" href="#"></a>
+		</div>
 </div>
 
 ```
@@ -42,11 +43,16 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     top: 0;
     width: 100%;
 
-
     &:hover {
       background-color: $color-white;
       filter: alpha(opacity=100);
       opacity: 1;
+    }
+
+    &__link {
+      &:hover {
+        background-color: transparent;
+      }
     }
 
     h2 {
