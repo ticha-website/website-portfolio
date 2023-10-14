@@ -25,21 +25,6 @@ The basic variant has transparent background so you can use it with any parent c
   </div>
 </div>
 ```
-
-## Bevelead
-The other variant with color backgroung which is used on the page.
-
-```html_example
-<div class="content content--bg content--beveled">
-  <div class="content__inner">
-    <p>
-        Sed congue placerat odio a interdum. Nunc id luctus lacus, eu gravida dui. Nullam consequat ac nisi vitae commodo.
-        Curabitur sed dignissim sem. Vestibulum in vehicula massa. Maecenas tempus metus odio, sit amet aliquam ipsum
-        scelerisque non.
-    </p>
-  </div>
-</div>
-```
 */
 
 .content {
@@ -51,116 +36,6 @@ The other variant with color backgroung which is used on the page.
   @include media-breakpoint-up(lg) {
     padding-bottom: $content-padding-lg;
     padding-top: $content-padding-lg + .5rem;
-  }
-
-  &--beveled {
-    overflow: visible;
-    padding-bottom: $content-padding;
-    padding-top: $content-padding - 1.6rem;
-    position: relative;
-
-    @include media-breakpoint-up(lg) {
-      padding-bottom: $content-padding-lg - 2rem;
-      padding-top: $content-padding-lg - 2.5rem;
-    }
-
-    &::before,
-    &::after {
-      content: '';
-      display: block;
-      height: 2rem;
-      left: 0;
-      position: absolute;
-      right: 0;
-
-      @include media-breakpoint-up(lg) {
-        height: 3rem;
-      }
-    }
-
-    &::before {
-      top: -2rem;
-
-      @include media-breakpoint-up(lg) {
-        top: -3rem;
-      }
-    }
-
-    &::after {
-      bottom: -2rem;
-
-      @include media-breakpoint-up(lg) {
-        bottom: -3rem;
-      }
-    }
-  }
-
-  &--light {
-    background: $color-white;
-
-    &::before {
-      background-image: linear-gradient(to right top, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-    }
-
-    &::after {
-      background-image: linear-gradient(to left bottom, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-    }
-
-    &.content--beveled-reverse {
-      &::before {
-        background-image: linear-gradient(to left top, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-      }
-
-      &::after {
-        background-image: linear-gradient(to right bottom, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-      }
-     }
-   }
-
-  &--bg {
-    background: $color-background;
-
-    &::before {
-      background-image: linear-gradient(to right top, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-    }
-
-    &::after {
-      background-image: linear-gradient(to left bottom, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-    }
-
-    &.content--beveled-reverse {
-      &::before {
-        background-image: linear-gradient(to left top, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-      }
-
-      &::after {
-        background-image: linear-gradient(to right bottom, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-      }
-    }
-  }
-
-  &--dark {
-    background: $primary;
-    color: $color-black;
-
-    &::before {
-      background-image: linear-gradient(to right top, $primary 0%, $primary 50%, $almost-transparent 51%);
-    }
-
-    &::after {
-      background-image: linear-gradient(to left bottom, $primary 0%, $primary 50%, $almost-transparent 51%);
-      z-index: -1;
-    }
-
-    &.content--beveled-reverse {
-      &::before {
-        background-image: linear-gradient(to left top, $primary 0%, $primary 50%, $almost-transparent 51%);
-      }
-
-      &::after {
-        background-image: linear-gradient(to right bottom, $primary 0%, $primary 50%, $almost-transparent 51%);
-      }
-    }
   }
 
   &__inner {
