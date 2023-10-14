@@ -9,12 +9,10 @@ Portfolio class allows you to do the hover effect for displays that are larger t
 
 ```html_example
 <div class="portfolio">
-   <img class="img-fluid" src="../images/clients/eScootie-logo-v.1-md.jpg">
-   <div class="overlay">
-         <h2>Clients name</h2>
-         <h3>Design/logo</h3>
-         <a class="info" href="#">Show more</a>
-   </div>
+    <img class="img-fluid" src="../images/clients/eScootie-logo-md.jpg?v<%= version %>">
+    <a class="overlay js-open-modal" href="#">
+        <h2>Clients name</h2>
+    </a>
 </div>
 
 ```

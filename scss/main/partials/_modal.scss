@@ -20,16 +20,11 @@ Use `modal` for creating the popup with detailed information about the work.
         <h3>Name of Client</h3>
         <p>Description of Client - Here should be one or two sentences about the client, for example what industry s/he from, etc.</p>
         <p> <a href="https://www.staging.adelaticha.cz/"> www.staging.adelaticha.cz</a> </p>
-        <p class="text-center">
-          <img class="rounded img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/fly-with-denis-front-500x324.jpg" alt="{{ t('denis.alt.front') }}">
-          <img class="rounded img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/fly-with-denis-front-750x486.jpg" alt="{{ t('denis.alt.front') }}">
-          <img class="rounded img-fluid d-none d-xl-inline-block" src="/images/clients/fly-with-denis-front-1000x647.jpg" alt="{{ t('denis.alt.front') }}">
-        </p>
-        <p class="text-center">
-          <img class="rounded img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/fly-with-denis-back-500x324.jpg" alt="{{ t('denis.alt.back') }}">
-          <img class="rounded img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/fly-with-denis-back-750x486.jpg" alt="{{ t('denis.alt.back') }}">
-          <img class="rounded img-fluid d-none d-xl-inline-block" src="/images/clients/fly-with-denis-back-1000x647.jpg" alt="{{ t('denis.alt.back') }}">
-        </p>
+			<p class="text-center mt-4">
+				<img class="rounded img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/fly-with-denis-business-card-500x375.jpg?v<%= version %>" alt="{{ t('denis.alt.business.card') }}">
+				<img class="rounded img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/fly-with-denis-business-card-750x563.jpg?v<%= version %>" alt="{{ t('denis.alt.business.card') }}">
+				<img class="rounded img-fluid d-none d-xl-inline-block" src="/images/clients/fly-with-denis-business-card-1200x900.jpg?v<%= version %>" alt="{{ t('denis.alt.business.card') }}">
+			</p>
       </div>
     </div>
   </div>
