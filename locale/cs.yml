@@ -40,7 +40,6 @@ message.invalid: Zpráva je ve špatném formátu
 message.missing: Chybí vyplněná zpráva
 menu.contact: Kontakty
 my.photo.alt: Moje fotka
-my.work: Moje práce
 name: Adéla Tichá
 name.invalid: Jméno je ve špatném formátu
 name.missing: Chybí vyplněné jméno
@@ -51,5 +50,6 @@ phone: Telefon
 phone.invalid: Telefonní číslo je ve špatném formátu
 phone.missing: Chybí vyplněné telefonní číslo
 phone.number: +420 776 470 413
+portfolio: Portfolio
 show.more: Ukaž více
 submit: Odeslat

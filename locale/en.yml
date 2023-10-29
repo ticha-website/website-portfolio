@@ -40,7 +40,6 @@ menu.contact: Contact me
 message.invalid: Message is not valid
 message.missing: Message is missing
 my.photo.alt: My photo
-my.work: My work
 name: Adela Ticha
 name.invalid: Name is not valid
 name.missing: Name is missing
@@ -51,5 +50,6 @@ phone: Phone
 phone.invalid: Phone is not valid
 phone.missing: Phone is missing
 phone.number: +420 776 470 413
+portfolio: Portfolio
 show.more: Show more
 submit: Submit
