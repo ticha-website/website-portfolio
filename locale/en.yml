@@ -2,6 +2,7 @@ about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
 client.link.lang: /en
+billing.info: Billing informaiton
 denis.intro: What started as a simple task of designing a business card for “Fly with Denis” turned into building a whole brand.
 denis.page.description: What started as a simple task of designing a business card for “Fly with Denis” turned into building a whole brand.
 denis.page.title: business card
@@ -53,3 +54,4 @@ phone.number: +420 776 470 413
 portfolio: Portfolio
 show.more: Show more
 submit: Submit
+vat: VAT
