@@ -82,7 +82,7 @@ Use `menu_item--flag` to add pictures of flags into menu.
       &:hover,
       &:focus {
         background: $gray-100;
-        color: $primary;
+        font-weight: 600;
         text-decoration: none;
       }
     }
