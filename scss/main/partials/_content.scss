@@ -1,5 +1,4 @@
-$content-padding: 5.68rem !default;
-$content-padding-lg: 6.5rem !default;
+$content-padding: 5rem !default;
 $almost-transparent: rgba($color-white, .001) !default; // workaround for Safari's linear-gradient transparent bug
 
 /*doc
@@ -30,13 +29,7 @@ The basic variant has transparent background so you can use it with any parent c
 .content {
   background: $color-white;
   overflow: hidden;
-  padding-bottom: $content-padding;
-  padding-top: $content-padding + 3rem;
-
-  @include media-breakpoint-up(lg) {
-    padding-bottom: $content-padding-lg;
-    padding-top: $content-padding-lg + .5rem;
-  }
+  padding-top: $content-padding;
 
   &__inner {
     @extend .container;
