@@ -1,0 +1,25 @@
+{% set pageDate = '21. 4. 2023' %}
+{% set client = clients[pageDate] %}
+{% set pageTitle = client.name %}
+{% set pageDescription = t('timemo.page.description') %}
+{% set pageImage = client.image + '-md.jpg' %}
+
+{% include 'components/header.njk' %}
+
+<div class="content" id="about-me">
+	<div class="content__inner">
+		<h4 class="client-title" id="page-title">{{ t('timemo.page.title') }}</h4>
+		<div class="client-body" id="page-body">
+			<h3>{{ t('timemo.page.name') }}</h3>
+			<p>{{ t('timemo.intro') }}</p>
+			<p>{{ t('timemo.work') }}</p>
+{#			<p class="text-center mt-4">
+				<img class="rounded img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/fly-with-denis-business-card-500x375.jpg?v<%= version %>" alt="{{ t('denis.alt.business.card') }}">
+				<img class="rounded img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/fly-with-denis-business-card-750x563.jpg?v<%= version %>" alt="{{ t('denis.alt.business.card') }}">
+				<img class="rounded img-fluid d-none d-xl-inline-block" src="/images/clients/fly-with-denis-business-card-1200x900.jpg?v<%= version %>" alt="{{ t('denis.alt.business.card') }}">
+			</p>#}
+		</div>
+	</div>
+</div>
+
+{% include 'components/footer.njk' %}
