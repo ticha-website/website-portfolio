@@ -13,7 +13,7 @@
 						<img class="img-fluid d-none d-md-inline" width="{{ clientHeadPictureSizes.md.width }}"
 							 height="{{ clientHeadPictureSizes.md.height }}" alt="{{ client.name }}"
 							 src="{{ client.image }}-md.jpg?v<%= version %>">
-						<div class="overlay">
+						<div class="overlay" onclick="">
 							<h2>{{ client.name }}</h2>
 							<a class="overlay overlay__link js-open-modal" href="{{ resolvePrefix(locale) }}{{ client.link }}">
 							</a>
