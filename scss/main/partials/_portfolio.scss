@@ -50,6 +50,8 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     }
 
     &__link {
+      background-color: red;
+
       &:hover {
         background-color: transparent;
       }
