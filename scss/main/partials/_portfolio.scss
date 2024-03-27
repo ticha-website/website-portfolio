@@ -32,10 +32,8 @@ Portfolio class allows you to do the hover effect for displays that are larger t
   }
 
   .overlay {
-    background-color: transparent;
     height: 100%;
     left: 0;
-    opacity: 0;
     overflow: hidden;
     position: absolute;
     text-decoration: none;
@@ -51,7 +49,7 @@ Portfolio class allows you to do the hover effect for displays that are larger t
 
     &__link {
       &:hover {
-        background-color: transparent;
+        opacity: 0;
       }
     }
 
