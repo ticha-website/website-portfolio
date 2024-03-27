@@ -32,8 +32,10 @@ Portfolio class allows you to do the hover effect for displays that are larger t
   }
 
   .overlay {
+    color: transparent;
     height: 100%;
     left: 0;
+    opacity: 1;
     overflow: hidden;
     position: absolute;
     text-decoration: none;
@@ -42,6 +44,7 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     width: 100%;
 
     &:hover {
+      color: $color-black;
       background-color: $color-white;
       filter: alpha(opacity=100);
       opacity: 1;
@@ -53,15 +56,15 @@ Portfolio class allows you to do the hover effect for displays that are larger t
       }
     }
 
-    h2 {
-      color: $color-black;
+    &--client {
       font-size: 2rem;
       font-weight: 800;
-      text-align: center;
       position: relative;
+      text-align: center;
       top: 50%;
       transform: translateY(-50%);
     }
+
   }
 
   img {

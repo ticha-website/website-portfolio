@@ -14,7 +14,7 @@
 							 height="{{ clientHeadPictureSizes.md.height }}" alt="{{ client.name }}"
 							 src="{{ client.image }}-md.jpg?v<%= version %>">
 						<div class="overlay">
-							<h2>{{ client.name }}</h2>
+							<h2 class="overlay--client">{{ client.name }}</h2>
 							<a class="overlay overlay__link js-open-modal" href="{{ resolvePrefix(locale) }}{{ client.link }}">
 							</a>
 						</div>
