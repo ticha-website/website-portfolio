@@ -18,7 +18,8 @@
                     <ul class="menu menu--horizontal">
                         <li class="menu__item"><a href="#about-me">{{ t('about.me') }}</a></li>
                         <li class="menu__item"><a href="#portfolio">{{ t('portfolio') }}</a></li>
-                        <li class="menu__item"><a href="#contact-me">{{ t('menu.contact') }}</a></li>
+						<li class="menu__item"><a href="#testimonial">{{ t('testimonial') }}</a></li>
+						<li class="menu__item"><a href="#contact-me">{{ t('menu.contact') }}</a></li>
 						<li class="menu__item menu__item--flag">
 						{% for language, url in languages %}
 								<a href="{{ url }}" class="menu__link{% if language == locale %} menu__link--active{% endif %}"><img src="/images/flag-{{ language }}.jpg?v<%= version %>" alt="{{ language }}"></a>
