@@ -27,19 +27,19 @@ Use `testimonial` for creating any kind of testimonial on the website.
 ```
  */
 
-.testimonial{
+.testimonial {
 
-  &__avatar{
+  &__avatar {
     display: flex;
     justify-content: center;
 
-    img{
+    img {
       border-radius: 50%;
       width: 3rem;
     }
   }
 
-  &__copy{
+  &__copy {
     background: $gray-100;
     border: .04rem solid $color-black;
     border-radius: .8rem;
@@ -53,7 +53,7 @@ Use `testimonial` for creating any kind of testimonial on the website.
     }
   }
 
-  &__name{
+  &__name {
     display: flex;
     font-size: 1.6rem;
     justify-content: center;

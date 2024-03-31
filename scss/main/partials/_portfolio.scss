@@ -39,15 +39,15 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     overflow: hidden;
     position: absolute;
     text-decoration: none;
-    vertical-align: middle;
     top: 0;
+    vertical-align: middle;
     width: 100%;
 
     @include media-breakpoint-up(md) {
       &:hover {
-        color: $color-black;
         background-color: $color-white;
-        filter: alpha(opacity=100);
+        color: $color-black;
+        filter: alpha(opacity = 100);
         opacity: 1;
       }
     }
