@@ -2,37 +2,32 @@ about.me: O mně
 created.by: Stránku vytvořil Jiří Tichý
 contacts: Kontakty
 billing.info: Fakturační údaje
-denis.intro: Projekt “Fly with Denis” začal jednoduchým zadáním - navrhnout vizitku. Nakonec jsme se rozhodli spolu vytvořit celý brand.
-denis.page.description: Projekt “Fly with Denis” začal jednoduchým zadáním - navrhnout vizitku. Nakonec se rozhodli spolu vytvořit celý brand.
+denis.intro:
+denis.page.description:
 denis.page.title: Vizitka
 denis.page.name: Fly with Denis
 denis.alt.business.card: Vizitka pro Fly with Denis
-denis.work: Nemůžu se dočkat pokračování naší spolupráce vstříc k Denisovým splněným snům.
 email: a.ticha@icloud.com
 email.invalid: Email je ve špatném formátu
 email.missing: Chybí vyplněný email
 error.page.homepage: domovskou stránku
 error.page.instruction: Zkontrolujte prosím URL, nebo navštivte
 error.page.no.exist: Ooops, tahle stránka neexistuje..
-escootie.intro: eScootie byl jeden z mých vůbec prvních projektů. Díky skvělé spolupráci s Tinou (zakladatelkou eScootie) jsem se naučila spostu věcí, které mě postupně dovedli na tu správnou cestu.
-escootie.page.description: Během spolupráce s eScootie jsem se hodně naučila. Na konci vzniklo logo, které předčilo naše očekávání.
+escootie.intro:
+escootie.page.description:
 escootie.page.title: logo
 escootie.page.name: eScootie
 escootie.alt.picture.web: eScootie Web
 escootie.website: www.escootie.net
-escootie.work: Pro eScootie jsem navrhla logo, které je použité na webových stránkách.
 footer.contacts: Kontaktujte mě
 form.message: Vaše zpráva
 form.name: Jméno
 form.phone: Telefonní číslo
 form.success: Děkuji za vaši zprávu!
 form.unknown.error: Neznámá chyba
-get.in.touch: Dejte mi o sobě vědět, vymyslíme spolu, jak oživit váš byznys.
-intro.skills: Pracuju v Adobe. Věnuju se vytváření brandu.
-intro.story: Kreativita byla pro mě vždycky to, co mě zvedlo ze židle. U tvorby nevnímám čas. Rodičák se dvěma klukama mě nakopl k tomu, abych se naplno věnovala
-intro.story.design: designu
-intro.story.graphic: grafickému
-intro.qualities: Chci znát vaši značku a příběh do poslední tečky, ať výsledek naší spolupráce stojí za to.
+get.in.touch:
+intro.story: 
+intro.qualities:
 lang: cs
 logo.alt: Moje logo
 menu: Menu
