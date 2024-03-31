@@ -13,7 +13,8 @@ Footer is great for mentioning authors or other useful information that are not 
  */
 
 .footer {
-  background: $color-white;
+  border-top: .02rem solid $gray-500;
+  background: $gray-100;
   margin-top: 3rem;
   padding: 1rem;
 
