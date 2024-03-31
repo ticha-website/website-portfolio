@@ -63,10 +63,9 @@ testimonial.tina: Spolupráce s Adelou na projektu Timemo byla velmi inspirujíc
 testimonial.tina.name: Tina
 testimonial.tina.company: Timemo
 testimonial.tina.photo: Avatar Tiny
-timemo.intro: Lorem Ipsum
-timemo.page.description: Ipsum
+timemo.intro:
+timemo.page.description:
 timemo.page.title: Logo a design aplikace
 timemo.page.name: Timemo
-timemo.work: Lorem
 vat: IČO
 vat.payer: Nejsem plátcem DPH
