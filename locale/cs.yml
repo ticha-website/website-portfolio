@@ -26,7 +26,7 @@ form.phone: Telefonní číslo
 form.success: Děkuji za vaši zprávu!
 form.unknown.error: Neznámá chyba
 get.in.touch: Rozjíždíte nový produkt nebo potřebujete redesign? Dejte vědět, ráda to s vámi proberu.
-intro:
+intro: Představení
 intro.story: Jmenuji se Adéla Tichá. Tvořím vizuální obsah, který jasně komunikuje vaše podnikání. Dodávám poutavé materiály, které vám přitáhnou nové zákazníky.
 intro.qualities: Navrhuju logo a brand, tištěné a online materiály. Moje zkušené oko dodá vašemu produktu šmrnc.
 lang: cs
@@ -50,7 +50,8 @@ portfolio: Portfolio
 show.more: Ukaž více
 submit: Odeslat
 testimonial: Reference
-testimonial.denis:
+testimonial.denis.1: Poptal jsem Adélu, aby mi vytvořila vizitky. Její nadšení a
+testimonial.denis.2: kreativita nás dovedly k vytvoření celého merchendisingu. Moji klienti si nejvíce oblíbili kšiltovky s logem Fly with Denis.
 testimonial.denis.name: Denis
 testimonial.denis.company: Fly with Denis
 testimonial.denis.photo: Avatar Denise
