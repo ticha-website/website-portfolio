@@ -1,4 +1,4 @@
-<p>{{ t('get.in.touch') }}</p>
+<p class="contact-form--cta">{{ t('get.in.touch') }}</p>
 <p class="alert alert-danger d-none" id="not-send" data-messages="{{ contactFormErrors }}">{{ t('form.unknown.error') }}</p>
 <p class="alert alert-success d-none" id="successfully-send">{{ t('form.success') }}</p>
 <form action='<%= apiUrl %>/v1/contact-form' method="post" id="contact-form" enctype="multipart/form-data">

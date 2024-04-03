@@ -61,4 +61,26 @@ Use `contact-form` for creating any kind of form on the website.
   &--message {
     height: 5.2rem;
   }
+
+  &--cta {
+    margin: auto auto 1rem;
+    text-align: left;
+
+    @include media-breakpoint-up(sm) {
+      width: 30.75rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 18.75rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 26.25rem;
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 32rem;
+    }
+
+  }
 }

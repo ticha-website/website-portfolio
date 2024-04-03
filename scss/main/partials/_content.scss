@@ -57,6 +57,9 @@ The basic variant has transparent background so you can use it with any parent c
     &--contacts {
       font-size: 1.2rem;
       font-weight: 500;
+      margin: auto auto 1rem;
+      text-align: left;
+      width: 17.5rem;
 
       a {
         color: $color-black;
@@ -65,14 +68,17 @@ The basic variant has transparent background so you can use it with any parent c
 
       @include media-breakpoint-up(sm) {
         font-size: 1.3rem;
+        width: 18rem;
       }
 
       @include media-breakpoint-up(md) {
         font-size: 1.5rem;
+        width: 20.625rem;
       }
 
       @include media-breakpoint-up(lg) {
         font-size: 1.8rem;
+        width: 24.75rem;
       }
     }
   }
