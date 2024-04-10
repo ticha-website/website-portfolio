@@ -2,7 +2,7 @@ about.me: O mně
 created.by: Stránku vytvořil Jiří Tichý
 contacts: Kontakty
 billing.info: Fakturační údaje
-denis.intro:
+denis.intro: Denis začal podnikat v poskytování vyhlídkových letů vrtulníkem. Požádal mě, ať mu vytvořím vizitky. Z vizitek nakonec vznikla celá nová identita. Jeho zákazníci teď nosí obrandované kšiltovky, trička, odznáčky a využívají také dárkové poukázky.
 denis.page.description:
 denis.page.title: Vizitka
 denis.page.name: Fly with Denis
@@ -13,7 +13,8 @@ email.missing: Chybí vyplněný email
 error.page.homepage: domovskou stránku
 error.page.instruction: Zkontrolujte prosím URL, nebo navštivte
 error.page.no.exist: Ooops, tahle stránka neexistuje..
-escootie.intro:
+escootie.intro: eScootie je aplikace pro lidi, kteří jezdí na elektro koloběžkách. Díky aplikace si pro svou jízdu mohou vybrat optimální udržovanou stezku.
+escootie.job.description: Já a Tina jsme téma rozsáhle probíraly. Nakonec se nám podařilo vybrat nejdůležitější prvky produktu. Tato fakta pak dala vzniknout novému atraktivnímu brandu. Spolupráce nás bavila.
 escootie.page.description:
 escootie.page.title: logo
 escootie.page.name: eScootie
@@ -27,7 +28,7 @@ form.success: Děkuji za vaši zprávu!
 form.unknown.error: Neznámá chyba
 get.in.touch: Rozjíždíte nový produkt nebo potřebujete redesign? Dejte vědět, ráda to s vámi proberu.
 intro: Představení
-intro.story: Jmenuji se Adéla Tichá. Tvořím vizuální obsah, který jasně komunikuje vaše podnikání. Dodávám poutavé materiály, které vám přitáhnou nové zákazníky.
+intro.story: Jmenuji se Adéla Tichá. Tvořím vizuální obsah, který jasně komunikuje vaše podnikání. A dodávám poutavé materiály, které vám přitáhnou nové zákazníky.
 intro.qualities: Navrhuju logo a brand, tištěné a online materiály. Moje zkušené oko dodá vašemu produktu šmrnc.
 lang: cs
 logo.alt: Moje logo
@@ -59,7 +60,8 @@ testimonial.tina: Spolupráce s Adelou na projektu Timemo byla velmi inspirujíc
 testimonial.tina.name: Tina
 testimonial.tina.company: Timemo
 testimonial.tina.photo: Avatar Tiny
-timemo.intro:
+timemo.intro: S Timemo, webovou aplikací, si můžete napsat vzkaz do budoucnosti.
+timemo.job.description: S radostí jsem přijala zadání pro vytvoření celé vizuální identity projektu, protože za aplikací stojí přesvědčivý příběh. Design proces byl plný radostných výzev, které vyústily ve svěží výsledek. Aplikace se odlišuje od podobných služeb. V současnosti s Tinou optimalizujeme UX/UI produktu, aby byl ještě visuals více user-friendly.
 timemo.page.description:
 timemo.page.title: Logo a UI
 timemo.page.name: Timemo
