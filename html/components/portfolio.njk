@@ -9,13 +9,13 @@
 					<div class="portfolio" onclick="">
 						<img class="img-fluid d-md-none" width="{{ clientHeadPictureSizes.sm.width }}"
 							 height="{{ clientHeadPictureSizes.sm.height }}" alt="{{ client.name }}"
-							 src="{{ client.image }}-sm.jpg?v<%= version %>">
+							 src="{{ client.image }}-sm.jpg?v<%= version %>" onclick="">
 						<img class="img-fluid d-none d-md-inline" width="{{ clientHeadPictureSizes.md.width }}"
 							 height="{{ clientHeadPictureSizes.md.height }}" alt="{{ client.name }}"
-							 src="{{ client.image }}-md.jpg?v<%= version %>">
-						<div class="overlay">
-							<h2 class="overlay--client">{{ client.name }}</h2>
-							<a class="overlay overlay__link js-open-modal" href="{{ resolvePrefix(locale) }}{{ client.link }}">
+							 src="{{ client.image }}-md.jpg?v<%= version %>" onclick="">
+						<div class="overlay" onclick="">
+							<h2 class="overlay--client" onclick="">{{ client.name }}</h2>
+							<a class="overlay overlay__link js-open-modal" onclick="" href="{{ resolvePrefix(locale) }}{{ client.link }}">
 							</a>
 						</div>
 					</div>
