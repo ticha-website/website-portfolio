@@ -1,37 +1,46 @@
 const closeButtonId = 'modal-close-button';
 const modalId = 'modal';
+const backdropId = 'backdrop';
 
 function transformResponseToText(response: Response): Promise<string> {
-	return response.text();
+    return response.text();
 }
 
 function clickCloseModalHandler(event: Event): void {
-	event.preventDefault();
+    event.preventDefault();
 
-	document.body.classList.remove('modal-open');
-	const modalElement = document.getElementById(modalId);
+    document.body.classList.remove('modal-open');
+    const modalElement = document.getElementById(modalId);
+    const backdropElement = document.getElementById(backdropId);
 
-	if (!modalElement) {
-		return;
-	}
+    if (!modalElement || !backdropElement) {
+        return;
+    }
 
-	modalElement.remove();
+    modalElement.remove();
+    backdropElement.remove();
 }
 
 function registerCloseModalListener(): void {
-	const closeButtonElement = document.getElementById(closeButtonId);
+    const closeButtonElement = document.getElementById(closeButtonId);
+    const closeBackdropElement = document.getElementById(backdropId);
 
-	if(!closeButtonElement) {
-		return;
-	}
+    if (!closeButtonElement || !closeBackdropElement) {
+        return;
+    }
 
-	closeButtonElement.addEventListener("click", clickCloseModalHandler);
+    closeButtonElement.addEventListener('click', clickCloseModalHandler);
+    closeBackdropElement.addEventListener('click', clickCloseModalHandler);
 }
 
 function openModal(title: string, body: string): void {
 	const closeButtonHtml = `
 		<button id="${closeButtonId}" type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
 	`;
+
+    const backdrop = document.createElement('div');
+    backdrop.classList.add('modal-backdrop', 'fade', 'show');
+    backdrop.id = backdropId;
 
 	const modalHtml = `
 		<div class="modal" tabindex="-1" role="dialog" style="display: block;">
@@ -53,20 +62,21 @@ function openModal(title: string, body: string): void {
 
 	document.body.appendChild(element);
 	document.body.classList.add('modal-open');
+    document.body.appendChild(backdrop);
 
 	registerCloseModalListener();
 }
 
 function parseContentForModal(content: string): void {
-	const parser = new DOMParser();
+    const parser = new DOMParser();
 
-	const html = parser.parseFromString(content, "text/html");
-	const pageTitle = html.getElementById('page-title');
-	const pageBody = html.getElementById('page-body');
+    const html = parser.parseFromString(content, 'text/html');
+    const pageTitle = html.getElementById('page-title');
+    const pageBody = html.getElementById('page-body');
 
-	if (!pageTitle || !pageBody) {
-		return;
-	}
+    if (!pageTitle || !pageBody) {
+        return;
+    }
 
 	// ToDo: Come up with better solution from type perspective
 	const textContent = pageTitle.textContent || '';
