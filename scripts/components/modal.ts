@@ -1,6 +1,7 @@
 const closeButtonId = 'modal-close-button';
 const modalId = 'modal';
 const backdropId = 'backdrop';
+const modalBackdropId = 'modal-backdrop';
 
 function transformResponseToText(response: Response): Promise<string> {
     return response.text();
@@ -17,11 +18,7 @@ function clickCloseModalHandler(event: Event): void {
     }
 
     const srcElement = event.target as HTMLElement;
-    if (srcElement.tagName === 'DIV' && srcElement.id === 'modal-close') {
-        modalElement.remove();
-        backdropElement.remove();
-        document.body.classList.remove('modal-open');
-    } else if (srcElement === closeButtonElement) {
+    if (srcElement.id === modalBackdropId || srcElement.id ===  closeButtonId) {
         modalElement.remove();
         backdropElement.remove();
         document.body.classList.remove('modal-open');
@@ -30,7 +27,7 @@ function clickCloseModalHandler(event: Event): void {
 
 function registerCloseModalListener(): void {
     const closeButtonElement = document.getElementById(closeButtonId);
-    const closeModalElement = document.getElementById('modal-close');
+    const closeModalElement = document.getElementById(modalBackdropId);
 
     if (!closeButtonElement || !closeModalElement) {
         return;
@@ -50,7 +47,7 @@ function openModal(title: string, body: string): void {
     backdrop.id = backdropId;
 
 	const modalHtml = `
-		<div id="modal-close" class="modal" tabindex="-1" role="dialog" style="display: block;">
+		<div id="${modalBackdropId}" class="modal" tabindex="-1" role="dialog" style="display: block;">
 		  <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
