@@ -1,5 +1,4 @@
-$content-padding: 5.68rem !default;
-$content-padding-lg: 6.5rem !default;
+$content-padding: 5rem !default;
 $almost-transparent: rgba($color-white, .001) !default; // workaround for Safari's linear-gradient transparent bug
 
 /*doc
@@ -25,142 +24,12 @@ The basic variant has transparent background so you can use it with any parent c
   </div>
 </div>
 ```
-
-## Bevelead
-The other variant with color backgroung which is used on the page.
-
-```html_example
-<div class="content content--bg content--beveled">
-  <div class="content__inner">
-    <p>
-        Sed congue placerat odio a interdum. Nunc id luctus lacus, eu gravida dui. Nullam consequat ac nisi vitae commodo.
-        Curabitur sed dignissim sem. Vestibulum in vehicula massa. Maecenas tempus metus odio, sit amet aliquam ipsum
-        scelerisque non.
-    </p>
-  </div>
-</div>
-```
 */
 
 .content {
+  background: $color-white;
   overflow: hidden;
-  padding-bottom: $content-padding;
-  padding-top: $content-padding + 3rem;
-
-  @include media-breakpoint-up(lg) {
-    padding-bottom: $content-padding-lg;
-    padding-top: $content-padding-lg + .5rem;
-  }
-
-  &--beveled {
-    overflow: visible;
-    padding-bottom: $content-padding;
-    padding-top: $content-padding - 1.6rem;
-    position: relative;
-
-    @include media-breakpoint-up(lg) {
-      padding-bottom: $content-padding-lg - 2rem;
-      padding-top: $content-padding-lg - 2.5rem;
-    }
-
-    &::before,
-    &::after {
-      content: '';
-      display: block;
-      height: 2rem;
-      left: 0;
-      position: absolute;
-      right: 0;
-
-      @include media-breakpoint-up(lg) {
-        height: 3rem;
-      }
-    }
-
-    &::before {
-      top: -2rem;
-
-      @include media-breakpoint-up(lg) {
-        top: -3rem;
-      }
-    }
-
-    &::after {
-      bottom: -2rem;
-
-      @include media-breakpoint-up(lg) {
-        bottom: -3rem;
-      }
-    }
-  }
-
-  &--light {
-    background: $color-white;
-
-    &::before {
-      background-image: linear-gradient(to right top, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-    }
-
-    &::after {
-      background-image: linear-gradient(to left bottom, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-    }
-
-    &.content--beveled-reverse {
-      &::before {
-        background-image: linear-gradient(to left top, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-      }
-
-      &::after {
-        background-image: linear-gradient(to right bottom, $color-white 0%, $color-white 50%, $almost-transparent 51%);
-      }
-     }
-   }
-
-  &--bg {
-    background: $color-background;
-
-    &::before {
-      background-image: linear-gradient(to right top, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-    }
-
-    &::after {
-      background-image: linear-gradient(to left bottom, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-    }
-
-    &.content--beveled-reverse {
-      &::before {
-        background-image: linear-gradient(to left top, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-      }
-
-      &::after {
-        background-image: linear-gradient(to right bottom, $color-background 0%, $color-background 50%, $almost-transparent 51%);
-      }
-    }
-  }
-
-  &--dark {
-    background: $primary;
-    color: $color-black;
-
-    &::before {
-      background-image: linear-gradient(to right top, $primary 0%, $primary 50%, $almost-transparent 51%);
-    }
-
-    &::after {
-      background-image: linear-gradient(to left bottom, $primary 0%, $primary 50%, $almost-transparent 51%);
-      z-index: -1;
-    }
-
-    &.content--beveled-reverse {
-      &::before {
-        background-image: linear-gradient(to left top, $primary 0%, $primary 50%, $almost-transparent 51%);
-      }
-
-      &::after {
-        background-image: linear-gradient(to right bottom, $primary 0%, $primary 50%, $almost-transparent 51%);
-      }
-    }
-  }
+  padding-top: $content-padding;
 
   &__inner {
     @extend .container;
@@ -172,7 +41,7 @@ The other variant with color backgroung which is used on the page.
 
   &__heading {
     font-size: 2.125rem;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1.8rem;
     text-align: center;
     text-transform: uppercase;
@@ -188,6 +57,9 @@ The other variant with color backgroung which is used on the page.
     &--contacts {
       font-size: 1.2rem;
       font-weight: 500;
+      margin: auto auto 1rem;
+      text-align: left;
+      width: 17.5rem;
 
       a {
         color: $color-black;
@@ -196,14 +68,17 @@ The other variant with color backgroung which is used on the page.
 
       @include media-breakpoint-up(sm) {
         font-size: 1.3rem;
+        width: 18rem;
       }
 
       @include media-breakpoint-up(md) {
         font-size: 1.5rem;
+        width: 20.625rem;
       }
 
       @include media-breakpoint-up(lg) {
         font-size: 1.8rem;
+        width: 24.75rem;
       }
     }
   }

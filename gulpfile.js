@@ -58,7 +58,7 @@ const constructLangSwitch = locales.reduce((map, locale) => {
 
 const nunjucksParams = {
 	clientHeadPictureSizes: config.clientHeadPictureSizes,
-	clients: require(__dirname + '/html/clients.json'),
+	clients: require(__dirname + '/html/components/clients.json'),
 	languages: constructLangSwitch,
 	year: new Date().getFullYear(),
 	resolvePrefix,

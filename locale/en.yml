@@ -1,38 +1,35 @@
 about.me: About me
 created.by: This site was created by Jiri Tichy
 contacts: Contacts
-client.link.lang: /en
-denis.intro: What started as a simple task of designing a business card for “Fly with Denis” turned into building a whole brand.
-denis.page.description: What started as a simple task of designing a business card for “Fly with Denis” turned into building a whole brand.
+billing.info: Billing information
+denis.intro: Denis has started providing sightseeing helicopter flights. He asked me to create a business card, and our collaboration resulted in a complete identity for his business. Now, he is using the visuals on caps, t-shirts, badges and gift vouchers for his clients.
+denis.page.description: Denis is a helicopter pilot. I created a whole merchandising for his business.
 denis.page.title: business card
 denis.page.name: Fly with Denis
 denis.alt.business.card: Business card for Fly with Denis
-denis.work: I’m ready to take off with Denis on more projects and help him with his dreams.
 email: a.ticha@icloud.com
 email.invalid: Email is not valid
 email.missing: Email is missing
 error.page.homepage: homepage
 error.page.instruction: Please check the URL or go to the
 error.page.no.exist: Ooops, this page does not exist..
-escootie.intro: eScootie was one of my first projects ever. Thanks to great cooperation with Tina (Founder of eScootie), I've learned many things that set me up on the right path.
-escootie.page.description: I have learned a lot during the cooperation with eScootie. In the end we came up with the great logo that exceeded our expectations.
+escootie.intro: eScootie is an app for e-scooter riders. Thanks to the app, they can choose optimal, well-maintained paths for their rides.
+escootie.job.description: I and Tina (founder) discussed the topic extensively and identified the most important aspects of the product. Based on these facts, I crafted an attractive brand identity. Both of us have enjoyed the collaboration.
+escootie.page.description: eScootie is an app for electric scooter drivers community. I created its visual identity from a scratch.
 escootie.page.title: logo
 escootie.page.name: eScootie
 escootie.alt.picture.web: eScootie Web
 escootie.website: www.escootie.net
-escootie.work: For eScootie, I designed the logo that is used on the website.
 footer.contacts: Get in touch
 form.message: Your message
 form.name: Name
 form.phone: Phone number
 form.success: Thank you!
 form.unknown.error: Unknown error
-get.in.touch: Leave a note and let me help to refresh your business.
-intro.skills: I work with Adobe. I create brand designs.
-intro.story: Creativity pumps blood in my veins. When I am in the process I am loosing a concept of time. Parental leave with two boys made me focus on what I enjoy and do the best -
-intro.story.design: design
-intro.story.graphic: graphic
-intro.qualities: I am eager to know all details of your brand and story. So we can cooperate and make your visuals attractive and catchy.
+get.in.touch: Launching a new product or considering a redesign? Reach out — I’d love to discuss it!
+intro: Introduction
+intro.story: My name is Adela Ticha. I create visual content that effectively communicates your business message to customers. I deliver eye-catching materials that truly resonate with your audience and boost a number of your clients.
+intro.qualities: I design prints and online materials. I bring creativity and expertise to your product.
 lang: en-US
 logo.alt: My logo
 menu: Menu
@@ -40,16 +37,33 @@ menu.contact: Contact me
 message.invalid: Message is not valid
 message.missing: Message is missing
 my.photo.alt: My photo
-my.work: My work
 name: Adela Ticha
 name.invalid: Name is not valid
 name.missing: Name is missing
-page.description.main: I am graphic designer, working in Adobe. I create brand designs. I am eager to know all details of your brand and story.
-page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela
+page.description.main: I am graphic designer of both print and online materials. I also create a whole new brand identity from a scratch.
+page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela, print
 page.title.main: Adela Ticha - Graphic Designer
 phone: Phone
 phone.invalid: Phone is not valid
 phone.missing: Phone is missing
 phone.number: +420 776 470 413
+portfolio: Portfolio
 show.more: Show more
 submit: Submit
+testimonial: Testimonials
+testimonial.denis.1: I asked Adela to create a business cards. She was enthusiastic about it. Her creative ideas finally led to a
+testimonial.denis.2: whole merchandising. My clients love caps with the logo Fly with Denis.
+testimonial.denis.name: Denis
+testimonial.denis.company: Fly with Denis
+testimonial.denis.photo: Avatar of Denis
+testimonial.tina: Working with Adela on Timemo was very inspiring, she came up with such interesting themes that truly brought out the essence of the product.
+testimonial.tina.name: Tina
+testimonial.tina.company: Timemo
+testimonial.tina.photo: Avatar of Tina
+timemo.intro: Timemo is an app for writing memos to your future self, complete with a compelling backstory.
+timemo.job.description: I happily accepted the task of creating the entire visual identity for the project. The design process was filled with delightful challenges, resulting in a fresh brand that sets it apart from similar services. I used the theme of message in the bottle. Currently, we’re collaborating on optimising the UX/UI to make the product more intuitive and user-friendly.
+timemo.page.description: Thanks to Timemo one can write a memo for future self. I did a logo that differs it from similar services.
+timemo.page.title: Logo and UI
+timemo.page.name: Timemo
+vat: VAT
+vat.payer: Non-payer of VAT

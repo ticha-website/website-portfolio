@@ -1,0 +1,20 @@
+{
+  "20. 3. 2024": {
+    "name": "Timemo",
+    "title": "timemo.page.title",
+    "link": "/clients/timemo.html",
+    "image": "/images/clients/timemo-logo"
+  },
+  "21. 4. 2023": {
+    "name": "Fly with Denis",
+    "title": "denis.page.title",
+    "link": "/clients/fly-with-denis.html",
+    "image": "/images/clients/fly-with-denis"
+  },
+  "20. 4. 2021": {
+    "name": "eScootie",
+    "title": "escootie.page.title",
+    "link": "/clients/escootie.html",
+    "image": "/images/clients/eScootie-logo"
+  }
+}

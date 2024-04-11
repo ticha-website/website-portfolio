@@ -9,12 +9,11 @@ Portfolio class allows you to do the hover effect for displays that are larger t
 
 ```html_example
 <div class="portfolio">
-   <img class="img-fluid" src="../images/clients/eScootie-logo-v.1-md.jpg">
-   <div class="overlay">
-         <h2>Clients name</h2>
-         <h3>Design/logo</h3>
-         <a class="info" href="#">Show more</a>
-   </div>
+    <img class="img-fluid" src="../images/clients/eScootie-logo-md.jpg?v<%= version %>">
+    <div class="overlay">
+        <h2>Clients name</h2>
+        <a class="overlay overlay__link js-open-modal" href="#"></a>
+		</div>
 </div>
 
 ```
@@ -27,55 +26,45 @@ Portfolio class allows you to do the hover effect for displays that are larger t
   margin-bottom: .4rem;
   overflow: hidden;
   position: relative;
-  text-align: left;
 
   @include media-breakpoint-up(md) {
     margin-bottom: 1.5rem;
   }
 
-  &:hover {
-    img {
-      -ms-transform: scale(1.2);
-      -webkit-transform: scale(1.2);
-      transform: scale(1.2);
-    }
-
-    .overlay {
-      filter: alpha(opacity = 00);
-      opacity: 1;
-    }
-
-    h2,
-    h3,
-    .info {
-      filter: alpha(opacity = 100);
-      opacity: 1;
-      -ms-transform: translatey(0);
-      -webkit-transform: translatey(0);
-      transform: translatey(0);
-    }
-
-    .info {
-      -webkit-transition-delay: .2s;
-      transition-delay: .2s;
-    }
-   }
-
   .overlay {
-    background-color: transparent;
+    color: transparent;
     height: 100%;
     left: 0;
     opacity: 1;
     overflow: hidden;
     position: absolute;
+    text-decoration: none;
     top: 0;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
+    vertical-align: middle;
     width: 100%;
 
-    @include media-breakpoint-up(md) {
-      background-color: $color-portfolio;
-      opacity: 0;
+    @media (hover: hover) {
+      &:hover {
+        background-color: $color-white;
+        color: $color-black;
+        filter: alpha(opacity = 100);
+        opacity: 1;
+      }
+
+      &__link {
+        &:hover {
+          opacity: 0;
+        }
+      }
+    }
+
+    &--client {
+      font-size: 2rem;
+      font-weight: 800;
+      position: relative;
+      text-align: center;
+      top: 50%;
+      transform: translateY(-50%);
     }
   }
 
@@ -84,68 +73,5 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    -webkit-transition: all .4s linear;
-    transition: all .4s linear;
-  }
-
-  h2 {
-    color: $color-white;
-    font-size: 1.8rem;
-    font-weight: 700;
-    padding: 1.625rem .625rem 0 1.625rem;
-    position: relative;
-   // text-transform: uppercase;
-    -ms-transform: translatey(-100px);
-    -webkit-transform: translatey(-100px);
-    transform: translatey(-100px);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-  }
-
-  h3 {
-    color: $color-white;
-    font-size: 1.3rem;
-    font-weight: 400;
-    padding: 0 .625rem .625rem 1.625rem;
-    position: relative;
-    text-transform: uppercase;
-    -ms-transform: translatey(-100px);
-    -webkit-transform: translatey(-100px);
-    transform: translatey(-100px);
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
- }
-
-  .info {
-    background-color: $color-portfolio;
-    border: .0625rem solid $color-white;
-    border-radius: .3rem;
-    color: $color-white;
-    display: inline-block;
-    filter: alpha(opacity = 0);
-    margin: 4.125rem 0 0 1.625rem;
-    opacity: 1;
-    padding: .4375rem .875rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-
-    @include media-breakpoint-up(md) {
-      background-color: transparent;
-      opacity: 0;
-    }
-
-    @include media-breakpoint-only(lg) {
-      margin-top: 8.125rem;
-    }
-
-    @include media-breakpoint-up(xl) {
-      margin-top: 38%;
-    }
-
-    &:hover {
-      box-shadow: 0 0 .3125rem $color-white;
-    }
   }
 }

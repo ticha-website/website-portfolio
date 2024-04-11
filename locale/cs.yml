@@ -1,38 +1,35 @@
 about.me: O mně
 created.by: Stránku vytvořil Jiří Tichý
 contacts: Kontakty
-client.link.lang:
-denis.intro: Projekt “Fly with Denis” začal jednoduchým zadáním - navrhnout vizitku. Nakonec jsme se rozhodli spolu vytvořit celý brand.
-denis.page.description: Projekt “Fly with Denis” začal jednoduchým zadáním - navrhnout vizitku. Nakonec se rozhodli spolu vytvořit celý brand.
+billing.info: Fakturační údaje
+denis.intro: Denis začal podnikat v poskytování vyhlídkových letů vrtulníkem. Požádal mě, ať mu vytvořím vizitky. Z vizitek nakonec vznikla celá nová identita. Jeho zákazníci teď nosí obrandované kšiltovky, trička, odznáčky a využívají také dárkové poukázky.
+denis.page.description:
 denis.page.title: Vizitka
 denis.page.name: Fly with Denis
 denis.alt.business.card: Vizitka pro Fly with Denis
-denis.work: Nemůžu se dočkat pokračování naší spolupráce vstříc k Denisovým splněným snům.
 email: a.ticha@icloud.com
 email.invalid: Email je ve špatném formátu
 email.missing: Chybí vyplněný email
 error.page.homepage: domovskou stránku
 error.page.instruction: Zkontrolujte prosím URL, nebo navštivte
 error.page.no.exist: Ooops, tahle stránka neexistuje..
-escootie.intro: eScootie byl jeden z mých vůbec prvních projektů. Díky skvělé spolupráci s Tinou (zakladatelkou eScootie) jsem se naučila spostu věcí, které mě postupně dovedli na tu správnou cestu.
-escootie.page.description: Během spolupráce s eScootie jsem se hodně naučila. Na konci vzniklo logo, které předčilo naše očekávání.
+escootie.intro: eScootie je aplikace pro lidi, kteří jezdí na elektro koloběžkách. Díky aplikace si pro svou jízdu mohou vybrat optimální udržovanou stezku.
+escootie.job.description: Já a Tina jsme téma rozsáhle probíraly. Nakonec se nám podařilo vybrat nejdůležitější prvky produktu. Tato fakta pak dala vzniknout novému atraktivnímu brandu. Spolupráce nás bavila.
+escootie.page.description:
 escootie.page.title: logo
 escootie.page.name: eScootie
 escootie.alt.picture.web: eScootie Web
 escootie.website: www.escootie.net
-escootie.work: Pro eScootie jsem navrhla logo, které je použité na webových stránkách.
 footer.contacts: Kontaktujte mě
 form.message: Vaše zpráva
 form.name: Jméno
 form.phone: Telefonní číslo
 form.success: Děkuji za vaši zprávu!
 form.unknown.error: Neznámá chyba
-get.in.touch: Dejte mi o sobě vědět, vymyslíme spolu, jak oživit váš byznys.
-intro.skills: Pracuju v Adobe. Věnuju se vytváření brandu.
-intro.story: Kreativita byla pro mě vždycky to, co mě zvedlo ze židle. U tvorby nevnímám čas. Rodičák se dvěma klukama mě nakopl k tomu, abych se naplno věnovala
-intro.story.design: designu
-intro.story.graphic: grafickému
-intro.qualities: Chci znát vaši značku a příběh do poslední tečky, ať výsledek naší spolupráce stojí za to.
+get.in.touch: Rozjíždíte nový produkt nebo potřebujete redesign? Dejte vědět, ráda to s vámi proberu.
+intro: Představení
+intro.story: Jmenuji se Adéla Tichá. Tvořím vizuální obsah, který jasně komunikuje vaše podnikání. A dodávám poutavé materiály, které vám přitáhnou nové zákazníky.
+intro.qualities: Navrhuju logo a brand, tištěné a online materiály. Moje zkušené oko dodá vašemu produktu šmrnc.
 lang: cs
 logo.alt: Moje logo
 menu: Menu
@@ -40,16 +37,33 @@ message.invalid: Zpráva je ve špatném formátu
 message.missing: Chybí vyplněná zpráva
 menu.contact: Kontakty
 my.photo.alt: Moje fotka
-my.work: Moje práce
 name: Adéla Tichá
 name.invalid: Jméno je ve špatném formátu
 name.missing: Chybí vyplněné jméno
-page.description.main: Jsem grafická designerka, která pracuje v Adobe. Věnuji se vytváření brandu. Chci znát vaši značku a příběh do poslední tečky.
-page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela, Adéla, Tichá, Adéla Tichá, grafický design, design aplikací, designer, designerka, grafická designerka, grafický designer
+page.description.main: Jsem grafická designérka která tvoří tiskovou i online grafiku. Dokážu s přehledem vytvořit i celý nový brand pro váš produkt nebo aplikaci.
+page.keywords.main: logo, design, graphic, graphic design, application design, Designer, Graphic Designer, Adela Ticha, Ticha, Adela, Adéla, Tichá, Adéla Tichá, grafický design, design aplikací, designer, designerka, grafická designerka, grafický designer, print, tisk
 page.title.main: Adéla Tichá - Grafická Designérka
 phone: Telefon
 phone.invalid: Telefonní číslo je ve špatném formátu
 phone.missing: Chybí vyplněné telefonní číslo
 phone.number: +420 776 470 413
+portfolio: Portfolio
 show.more: Ukaž více
 submit: Odeslat
+testimonial: Reference
+testimonial.denis.1: Poptal jsem Adélu, aby mi vytvořila vizitky. Její nadšení a
+testimonial.denis.2: kreativita nás dovedly k vytvoření celého merchendisingu. Moji klienti si nejvíce oblíbili kšiltovky s logem Fly with Denis.
+testimonial.denis.name: Denis
+testimonial.denis.company: Fly with Denis
+testimonial.denis.photo: Avatar Denise
+testimonial.tina: Spolupráce s Adelou na projektu Timemo byla velmi inspirující; přišla s tak zajímavými tématy, která skutečně vyzdvihla podstatu produktu.
+testimonial.tina.name: Tina
+testimonial.tina.company: Timemo
+testimonial.tina.photo: Avatar Tiny
+timemo.intro: S Timemo, webovou aplikací, si můžete napsat vzkaz do budoucnosti.
+timemo.job.description: S radostí jsem přijala zadání pro vytvoření celé vizuální identity projektu, protože za aplikací stojí přesvědčivý příběh. Design proces byl plný radostných výzev, které vyústily ve svěží výsledek. Logo aplikace se odlišuje od podobných služeb tím, že na místo pera jsem zvolila motiv vzkazu v lahvi. V současnosti s Tinou optimalizujeme UX/UI produktu, aby byl ještě visuals více user-friendly.
+timemo.page.description:
+timemo.page.title: Logo a UI
+timemo.page.name: Timemo
+vat: IČO
+vat.payer: Nejsem plátcem DPH
