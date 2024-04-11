@@ -7,30 +7,38 @@ function transformResponseToText(response: Response): Promise<string> {
 }
 
 function clickCloseModalHandler(event: Event): void {
-    event.preventDefault();
 
-    document.body.classList.remove('modal-open');
+
     const modalElement = document.getElementById(modalId);
     const backdropElement = document.getElementById(backdropId);
+    const closeButtonElement = document.getElementById(closeButtonId);
 
-    if (!modalElement || !backdropElement) {
+    if (!modalElement || !backdropElement || !closeButtonElement) {
         return;
     }
 
-    modalElement.remove();
-    backdropElement.remove();
+    const srcElement = event.target as HTMLElement;
+    if (srcElement.tagName === 'DIV' && srcElement.id === 'modal-close') {
+        modalElement.remove();
+        backdropElement.remove();
+        document.body.classList.remove('modal-open');
+    } else if (srcElement === closeButtonElement) {
+        modalElement.remove();
+        backdropElement.remove();
+        document.body.classList.remove('modal-open');
+    }
 }
 
 function registerCloseModalListener(): void {
     const closeButtonElement = document.getElementById(closeButtonId);
-    const closeBackdropElement = document.getElementById(backdropId);
+    const closeModalElement = document.getElementById('modal-close');
 
-    if (!closeButtonElement || !closeBackdropElement) {
+    if (!closeButtonElement || !closeModalElement) {
         return;
     }
 
     closeButtonElement.addEventListener('click', clickCloseModalHandler);
-    closeBackdropElement.addEventListener('click', clickCloseModalHandler);
+    closeModalElement.addEventListener('click', clickCloseModalHandler);
 }
 
 function openModal(title: string, body: string): void {
@@ -43,7 +51,7 @@ function openModal(title: string, body: string): void {
     backdrop.id = backdropId;
 
 	const modalHtml = `
-		<div class="modal" tabindex="-1" role="dialog" style="display: block;">
+		<div id="modal-close" class="modal" tabindex="-1" role="dialog" style="display: block;">
 		  <div class="modal-dialog modal-dialog-scrollable modal-xl modal-dialog-centered" role="document">
 		    <div class="modal-content">
 		      <div class="modal-header">
