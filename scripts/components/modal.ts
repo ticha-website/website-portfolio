@@ -8,7 +8,6 @@ function transformResponseToText(response: Response): Promise<string> {
 
 function clickCloseModalHandler(event: Event): void {
 
-
     const modalElement = document.getElementById(modalId);
     const backdropElement = document.getElementById(backdropId);
     const closeButtonElement = document.getElementById(closeButtonId);
