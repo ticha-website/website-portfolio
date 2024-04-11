@@ -43,19 +43,21 @@ Portfolio class allows you to do the hover effect for displays that are larger t
     vertical-align: middle;
     width: 100%;
 
-    &:hover {
-      background-color: $color-white;
-      color: $color-black;
-      filter: alpha(opacity = 100);
-      opacity: 1;
-    }
+    @media (hover: hover) {
 
-    &__link {
       &:hover {
-        opacity: 0;
+        background-color: $color-white;
+        color: $color-black;
+        filter: alpha(opacity=100);
+        opacity: 1;
+      }
+
+      &__link {
+        &:hover {
+          opacity: 0;
+        }
       }
     }
-
     &--client {
       font-size: 2rem;
       font-weight: 800;
@@ -64,7 +66,6 @@ Portfolio class allows you to do the hover effect for displays that are larger t
       top: 50%;
       transform: translateY(-50%);
     }
-
   }
 
   img {
