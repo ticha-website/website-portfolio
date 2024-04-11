@@ -92,3 +92,7 @@ Use `modal` for creating the popup with detailed information about the work.
 .modal-body {
   @extend .client-body;
 }
+
+.modal-open {
+  overflow: hidden;
+}
