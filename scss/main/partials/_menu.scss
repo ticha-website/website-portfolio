@@ -145,7 +145,7 @@ Use `menu_item--flag` to add pictures of flags into menu.
 
   &--horizontal {
     .menu__item {
-      @include media-breakpoint-up(md) {
+      @include media-breakpoint-up(lg) {
         display: inline-block;
 
         a {
@@ -184,7 +184,7 @@ Use `menu_item--flag` to add pictures of flags into menu.
   &__collapse {
     display: none;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       display: flex;
       flex-basis: auto;
     }
