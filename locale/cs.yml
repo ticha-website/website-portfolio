@@ -2,11 +2,12 @@ about.me: O mně
 created.by: Stránku vytvořil Jiří Tichý
 contacts: Kontakty
 billing.info: Fakturační údaje
+denis.alt.business.card: Vizitka pro Fly with Denis
+denis.alt.mug: Hrnek s logem Fly with Denis
 denis.intro: Denis začal podnikat v poskytování vyhlídkových letů vrtulníkem. Požádal mě, ať mu vytvořím vizitky. Z vizitek nakonec vznikla celá nová identita. Jeho zákazníci teď nosí obrandované kšiltovky, trička, odznáčky a využívají také dárkové poukázky.
 denis.page.description:
 denis.page.title: Vizitka
 denis.page.name: Fly with Denis
-denis.alt.business.card: Vizitka pro Fly with Denis
 email: a.ticha@icloud.com
 email.invalid: Email je ve špatném formátu
 email.missing: Chybí vyplněný email
@@ -55,11 +56,12 @@ testimonial.denis.1: Poptal jsem Adélu, aby mi vytvořila vizitky. Její nadše
 testimonial.denis.2: kreativita nás dovedly k vytvoření celého merchendisingu. Moji klienti si nejvíce oblíbili kšiltovky s logem Fly with Denis.
 testimonial.denis.name: Denis
 testimonial.denis.company: Fly with Denis
-testimonial.denis.photo: Avatar Denise
+testimonial.denis.photo: Fotka Denise
 testimonial.tina: Spolupráce s Adelou na projektu Timemo byla velmi inspirující; přišla s tak zajímavými tématy, která skutečně vyzdvihla podstatu produktu.
 testimonial.tina.name: Tina
 testimonial.tina.company: Timemo
-testimonial.tina.photo: Avatar Tiny
+testimonial.tina.photo: Fotka Tiny
+timemo.alt.badge: Odznáček s logem Timemo
 timemo.intro: S Timemo, webovou aplikací, si můžete napsat vzkaz do budoucnosti.
 timemo.job.description: S radostí jsem přijala zadání pro vytvoření celé vizuální identity projektu, protože za aplikací stojí přesvědčivý příběh. Design proces byl plný radostných výzev, které vyústily ve svěží výsledek. Logo aplikace se odlišuje od podobných služeb tím, že na místo pera jsem zvolila motiv vzkazu v lahvi. V současnosti s Tinou optimalizujeme UX/UI produktu, aby byl ještě visuals více user-friendly.
 timemo.page.description:
