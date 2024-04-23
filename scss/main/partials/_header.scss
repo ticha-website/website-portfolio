@@ -38,5 +38,9 @@ Navigation is great for mentioning authors or other useful information that are 
     @include media-breakpoint-up(md) {
       margin: 0;
     }
+
+    &--clients {
+      width: 17.3rem;
+    }
   }
 }

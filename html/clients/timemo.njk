@@ -4,7 +4,19 @@
 {% set pageDescription = t('timemo.page.description') %}
 {% set pageImage = client.image + '-md.jpg' %}
 
-{% include 'components/header.njk' %}
+{% include 'components/header-base.njk' %}
+
+<header class="header header--fixed">
+	<div class="container">
+		<div class="row justify-content-md-between">
+			<div class="col-12 col-md-3">
+				<a class="header__logo header__logo--clients" href="/#">
+					<img src="/images/logo.svg?v<%= version %>" alt="{{ t('logo.alt') }}" height="50">
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
 
 <div class="content" id="about-me">
 	<div class="content__inner">
