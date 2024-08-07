@@ -20,7 +20,7 @@ jobs:
         run: docker-compose run website-portfolio make -C production/ clean package
 
       - name: Store Artifact
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v4
         with:
           name: ticha-website # double zipping issue: https://github.com/actions/upload-artifact/issues/39
           path: production/release/ticha-website.zip
