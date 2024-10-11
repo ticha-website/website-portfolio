@@ -14,8 +14,7 @@ We used nunjucks for templating the html sites.
 The site is running on AWS. The whole deployment is automated by CI/CD pipeline in GitHub Actions.
 
 ## Requirements
- - NodeJS 16.x
- - Ruby 2.5+
+ - Docker
 
 
 ## Installation & Run
