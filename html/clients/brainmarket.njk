@@ -1,0 +1,48 @@
+{% set pageDate = '20. 4. 2025' %}
+{% set client = clients[pageDate] %}
+{% set pageTitle = client.name %}
+{% set pageDescription = t('brainmarket.page.description') %}
+{% set pageImage = client.image + '-md.jpg' %}
+
+{% include 'components/header-base.njk' %}
+
+<header class="header header--fixed">
+	<div class="container">
+		<div class="row justify-content-md-between">
+			<div class="col-12 col-md-3">
+				<a class="header__logo header__logo--clients" href="/#">
+					<img src="/images/logo.svg?v<%= version %>" alt="{{ t('logo.alt') }}" height="50">
+				</a>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="content" id="about-me">
+	<div class="content__inner">
+		<h4 class="client-title" id="page-title">{{ t('brainmarket.page.title') }}</h4>
+		<div class="client-body" id="page-body">
+			<h3>{{ t('brainmarket.page.name') }}</h3>
+			<p>{{ t('brainmarket.intro') }}</p>
+			<p>{{ t('brainmarket.job.description') }}</p>
+			<p><a href="https://{{ t('brainmarket.website') }}/" target="_blank"> {{ t('brainmarket.website') }}</a></p>
+			<p class="text-center">
+				<img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/eScootie-sticker-500x333.png?v<%= version %>" alt="{{ t('escootie.alt.sticker') }}">
+				<img class="img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/eScootie-sticker-750x500.png?v<%= version %>" alt="{{ t('escootie.alt.sticker') }}">
+				<img class="img-fluid d-none d-xl-inline-block" src="/images/clients/eScootie-sticker-1200x800.png?v<%= version %>" alt="{{ t('escootie.alt.sticker') }}">
+			</p>
+			<p class="text-center">
+				<img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/eScootie-bag-500x325.jpg?v<%= version %>" alt="{{ t('escootie.alt.bag') }}">
+				<img class="img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/eScootie-bag-750x488.jpg?v<%= version %>" alt="{{ t('escootie.alt.bag') }}">
+				<img class="img-fluid d-none d-xl-inline-block" src="/images/clients/eScootie-bag-1200x780.jpg?v<%= version %>" alt="{{ t('escootie.alt.bag') }}">
+			</p>
+			<p class="text-center">
+				<img class="img-fluid d-inline-block d-sm-inline-block d-md-none" src="/images/clients/eScootie-mobile-265x540.png?v<%= version %>" alt="{{ t('escootie.alt.picture.web') }}">
+				<img class="img-fluid d-none d-md-inline-block d-xl-none" src="/images/clients/eScootie-mobile-344x700.png?v<%= version %>" alt="{{ t('escootie.alt.picture.web') }}">
+				<img class="img-fluid d-none d-xl-inline-block" src="/images/clients/eScootie-mobile-530x1080.png?v<%= version %>" alt="{{ t('escootie.alt.picture.web') }}">
+			</p>
+		</div>
+	</div>
+</div>
+
+{% include 'components/footer.njk' %}

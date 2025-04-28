@@ -1,4 +1,10 @@
 {
+  "20. 4. 2025": {
+    "name": "BrainMarket",
+    "title": "brainmarket.page.title",
+    "link": "/clients/brainmarket.html",
+    "image": "/images/clients/brainmarket-logo"
+  },
   "20. 3. 2024": {
     "name": "Timemo",
     "title": "timemo.page.title",
