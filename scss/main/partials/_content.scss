@@ -68,17 +68,17 @@ The basic variant has transparent background so you can use it with any parent c
 
       @include media-breakpoint-up(sm) {
         font-size: 1.3rem;
-        width: 18rem;
+        width: 21rem;
       }
 
       @include media-breakpoint-up(md) {
-        font-size: 1.5rem;
-        width: 20.625rem;
+        font-size: 1.4rem;
+        width: 22.625rem;
       }
 
       @include media-breakpoint-up(lg) {
         font-size: 1.8rem;
-        width: 24.75rem;
+        width: 29.5rem;
       }
     }
   }
