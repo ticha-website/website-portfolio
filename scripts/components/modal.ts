@@ -1,5 +1,5 @@
 const closeButtonId = 'modal-close-button';
-const modalId = 'modal';
+const id = 'modal';
 
 function transformResponseToText(response: Response): Promise<string> {
 	return response.text();
@@ -9,7 +9,7 @@ function clickCloseModalHandler(event: Event): void {
 	event.preventDefault();
 
 	document.body.classList.remove('modal-open');
-	const modalElement = document.getElementById(modalId);
+	const modalElement = document.getElementById(id);
 
 	if (!modalElement) {
 		return;
@@ -49,7 +49,7 @@ function openModal(title: string, body: string): void {
 
 	const element = document.createElement('div');
 	element.innerHTML = modalHtml;
-	element.id = modalId;
+	element.id = id;
 
 	document.body.appendChild(element);
 	document.body.classList.add('modal-open');
