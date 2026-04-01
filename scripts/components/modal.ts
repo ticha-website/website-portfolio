@@ -1,5 +1,5 @@
 const closeButtonId = 'modal-close-button';
-const modalId = 'modal';
+const id = 'modal';
 const backdropId = 'backdrop';
 const modalBackdropId = 'modal-backdrop';
 
@@ -9,7 +9,7 @@ function transformResponseToText(response: Response): Promise<string> {
 
 function clickCloseModalHandler(event: Event): void {
 
-    const modalElement = document.getElementById(modalId);
+    const modalElement = document.getElementById(id);
     const backdropElement = document.getElementById(backdropId);
     const closeButtonElement = document.getElementById(closeButtonId);
 
@@ -62,7 +62,7 @@ function openModal(title: string, body: string): void {
 
 	const element = document.createElement('div');
 	element.innerHTML = modalHtml;
-	element.id = modalId;
+	element.id = id;
 
 	document.body.appendChild(element);
 	document.body.classList.add('modal-open');
